@@ -23,6 +23,74 @@ const parseCsv = (value: string | undefined) =>
     .map((entry) => entry.trim())
     .filter(Boolean)
 
+const s3AuthenticationMethod = process.env.S3_AUTHENTICATION_METHOD || "access-key"
+const s3RequiredConfig = {
+  S3_BUCKET: process.env.S3_BUCKET,
+  S3_FILE_URL: process.env.S3_FILE_URL,
+  S3_REGION: process.env.S3_REGION,
+}
+const s3RequiredAuth =
+  s3AuthenticationMethod === "s3-iam-role"
+    ? {}
+    : {
+        S3_ACCESS_KEY_ID: process.env.S3_ACCESS_KEY_ID,
+        S3_SECRET_ACCESS_KEY: process.env.S3_SECRET_ACCESS_KEY,
+      }
+const s3Config = {
+  ...s3RequiredConfig,
+  ...s3RequiredAuth,
+}
+const configuredS3Entries = Object.entries(s3Config).filter(
+  ([, value]) => !!value
+)
+const missingS3Entries = Object.entries(s3Config)
+  .filter(([, value]) => !value)
+  .map(([key]) => key)
+
+if (configuredS3Entries.length > 0 && missingS3Entries.length > 0) {
+  throw new Error(
+    `Incomplete S3 file provider configuration. Missing: ${missingS3Entries.join(
+      ", "
+    )}`
+  )
+}
+
+const fileProvider =
+  configuredS3Entries.length > 0
+    ? {
+        resolve: "@medusajs/medusa/file-s3",
+        id: "s3",
+        options: {
+          file_url: process.env.S3_FILE_URL,
+          access_key_id: process.env.S3_ACCESS_KEY_ID,
+          secret_access_key: process.env.S3_SECRET_ACCESS_KEY,
+          authentication_method: s3AuthenticationMethod,
+          session_token: process.env.S3_SESSION_TOKEN,
+          region: process.env.S3_REGION,
+          bucket: process.env.S3_BUCKET,
+          endpoint: process.env.S3_ENDPOINT,
+          cache_control: process.env.S3_CACHE_CONTROL,
+          download_file_duration: process.env.S3_DOWNLOAD_FILE_DURATION
+            ? Number(process.env.S3_DOWNLOAD_FILE_DURATION)
+            : undefined,
+          prefix: process.env.S3_PREFIX,
+          additional_client_config: {
+            forcePathStyle: process.env.S3_FORCE_PATH_STYLE !== "false",
+          },
+        },
+      }
+    : {
+        resolve: "@medusajs/medusa/file-local",
+        id: "local",
+        options: {
+          backend_url:
+            process.env.LOCAL_FILE_BACKEND_URL ||
+            `${backendUrl || `http://localhost:${process.env.PORT || 9000}`}/static`,
+          upload_dir: process.env.LOCAL_FILE_UPLOAD_DIR,
+          private_upload_dir: process.env.LOCAL_FILE_PRIVATE_UPLOAD_DIR,
+        },
+      }
+
 const nexiProvider = process.env.NEXI_CHECKOUT_SECRET_KEY
   ? [
       {
@@ -102,23 +170,7 @@ module.exports = defineConfig({
     {
       resolve: "@medusajs/medusa/file",
       options: {
-        providers: [
-          {
-            resolve: "@medusajs/medusa/file-s3",
-            id: "s3",
-            options: {
-              file_url: process.env.S3_FILE_URL,
-              access_key_id: process.env.S3_ACCESS_KEY_ID,
-              secret_access_key: process.env.S3_SECRET_ACCESS_KEY,
-              region: process.env.S3_REGION,
-              bucket: process.env.S3_BUCKET,
-              endpoint: process.env.S3_ENDPOINT,
-              additional_client_config: {
-                forcePathStyle: true,
-              },
-            },
-          },
-        ],
+        providers: [fileProvider],
       },
     },
   ],

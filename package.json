@@ -4,7 +4,10 @@
   "description": "Medusa.js v2 backend, ready to deploy on Railway",
   "license": "MIT",
   "scripts": {
+    "postinstall": "node scripts/patch-medusa-danish-admin.mjs",
+    "prebuild": "node scripts/patch-medusa-danish-admin.mjs",
     "build": "medusa build",
+    "predev": "node scripts/patch-medusa-danish-admin.mjs",
     "start": "medusa start",
     "dev": "medusa develop"
   },

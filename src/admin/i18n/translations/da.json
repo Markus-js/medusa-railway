@@ -1,0 +1,3343 @@
+{
+  "$schema": "./$schema.json",
+  "general": {
+    "fullList": "Alle",
+    "ascending": "Stigende",
+    "descending": "Faldende",
+    "add": "Tilføj",
+    "start": "Start",
+    "end": "Slut",
+    "open": "Åbn",
+    "close": "Luk",
+    "apply": "Anvend",
+    "range": "Interval",
+    "search": "Søg",
+    "original": "Original",
+    "of": "af",
+    "results": "resultater",
+    "pages": "sider",
+    "next": "Næste",
+    "prev": "Forrige",
+    "is": "er",
+    "timeline": "Tidslinje",
+    "success": "Succes",
+    "warning": "Advarsel",
+    "tip": "Tip",
+    "error": "Fejl",
+    "select": "Vælg",
+    "selectAll": "Vælg alle",
+    "unselectAll": "Fravælg alle",
+    "selected": "Valgt",
+    "enabled": "Aktiveret",
+    "disabled": "Deaktiveret",
+    "expired": "Udløbet",
+    "active": "Aktiv",
+    "revoked": "Tilbagekaldt",
+    "new": "Ny",
+    "modified": "Ændret",
+    "added": "Tilføjet",
+    "removed": "Fjernet",
+    "remaining": "Tilbage",
+    "admin": "Admin",
+    "store": "Butik",
+    "details": "Detaljer",
+    "items_one": "{{count}} vare",
+    "items_other": "{{count}} varer",
+    "countSelected": "{{count}} valgt",
+    "countOfTotalSelected": "{{count}} af {{total}} valgt",
+    "plusCount": "+ {{count}}",
+    "plusCountMore": "+ {{count}} mere",
+    "areYouSure": "Er du sikker?",
+    "areYouSureDescription": "Du er ved at slette {{entity}} {{title}}. Denne handling kan ikke fortrydes.",
+    "noRecordsFound": "Ingen registreringer fundet",
+    "typeToConfirm": "Indtast venligst {val} for at bekræfte:",
+    "noResultsTitle": "Ingen resultater",
+    "noResultsMessage": "Prøv at ændre filtrene eller søgeforespørgslen",
+    "noSearchResults": "Ingen søgeresultater",
+    "noSearchResultsFor": "Ingen søgeresultater for <0>'{{query}}'</0>",
+    "noRecordsTitle": "Ingen poster",
+    "noRecordsMessage": "Der er ingen poster at vise",
+    "noRecordsMessageFiltered": "Der er ingen registreringer at vise, der matcher filtrene",
+    "unsavedChangesTitle": "Er du sikker på, at du vil forlade denne formular?",
+    "unsavedChangesDescription": "Du har ikke-gemte ændringer, som vil gå tabt, hvis du afslutter denne formular.",
+    "includesTaxTooltip": "Priserne i denne kolonne er inklusive moms.",
+    "excludesTaxTooltip": "Priserne i denne kolonne er eksklusive moms.",
+    "noMoreData": "Ikke flere data"
+  },
+  "json": {
+    "header": "JSON",
+    "numberOfKeys_one": "{{count}} nøgle",
+    "numberOfKeys_other": "{{count}} nøgler",
+    "drawer": {
+      "header_one": "JSON <0>· {{count}} nøgle</0>",
+      "header_other": "JSON <0>· {{count}} nøgler</0>",
+      "description": "Se JSON-dataene for dette objekt."
+    }
+  },
+  "metadata": {
+    "header": "Metadata",
+    "numberOfKeys_one": "{{count}} nøgle",
+    "numberOfKeys_other": "{{count}} nøgler",
+    "edit": {
+      "header": "Rediger metadata",
+      "description": "Rediger metadataene for dette objekt.",
+      "successToast": "Metadata blev opdateret.",
+      "actions": {
+        "insertRowAbove": "Indsæt række ovenfor",
+        "insertRowBelow": "Indsæt række nedenfor",
+        "deleteRow": "Slet række"
+      },
+      "labels": {
+        "key": "Nøgle",
+        "value": "Værdi"
+      },
+      "complexRow": {
+        "label": "Nogle rækker er deaktiveret",
+        "description": "Dette objekt indeholder ikke-primitive metadata, såsom arrays eller objekter, som ikke kan redigeres her. Brug API'et direkte for at redigere de deaktiverede rækker.",
+        "tooltip": "Denne række er deaktiveret, fordi den indeholder ikke-primitive data."
+      }
+    }
+  },
+  "validation": {
+    "mustBeInt": "Værdien skal være et helt tal.",
+    "mustBePositive": "Værdien skal være et positivt tal."
+  },
+  "actions": {
+    "save": "Gem",
+    "saveChanges": "Gem ændringer",
+    "saveAsDraft": "Gem som kladde",
+    "saveAndClose": "Gem og luk",
+    "copy": "Kopiér",
+    "copied": "Kopieret",
+    "duplicate": "Dupliker",
+    "publish": "Udgiv",
+    "create": "Opret",
+    "delete": "Slet",
+    "remove": "Fjern",
+    "revoke": "Tilbagekald",
+    "cancel": "Annuller",
+    "forceConfirm": "Tving bekræftelse",
+    "continueEdit": "Fortsæt med at redigere",
+    "enable": "Aktiver",
+    "disable": "Deaktiver",
+    "undo": "Fortryd",
+    "complete": "Fuldfør",
+    "viewDetails": "Se detaljer",
+    "back": "Tilbage",
+    "close": "Luk",
+    "showMore": "Vis mere",
+    "continue": "Fortsæt",
+    "continueWithEmail": "Fortsæt med e-mail",
+    "idCopiedToClipboard": "ID kopieret til udklipsholder",
+    "editVariantImages": "Rediger variantbilleder",
+    "editImages": "Rediger billeder",
+    "addReason": "Tilføj grund",
+    "addNote": "Tilføj note",
+    "reset": "Nulstil",
+    "confirm": "Bekræft",
+    "edit": "Rediger",
+    "addItems": "Tilføj elementer",
+    "download": "Download",
+    "clear": "Ryd",
+    "clearAll": "Ryd alle",
+    "apply": "Anvend",
+    "add": "Tilføj",
+    "select": "Vælg",
+    "browse": "Gennemse",
+    "logout": "Log ud",
+    "hide": "Skjul",
+    "export": "Eksporter",
+    "import": "Importer",
+    "cannotUndo": "Denne handling kan ikke fortrydes"
+  },
+  "operators": {
+    "in": "I"
+  },
+  "app": {
+    "search": {
+      "label": "Søg",
+      "title": "Søg",
+      "description": "Søg i hele din butik, inklusive ordrer, produkter, kunder og mere.",
+      "allAreas": "Alle områder",
+      "navigation": "Navigation",
+      "openResult": "Åbn resultat",
+      "showMore": "Vis mere",
+      "placeholder": "Hop til eller find noget...",
+      "noResultsTitle": "Ingen resultater fundet",
+      "noResultsMessage": "Vi kunne ikke finde noget, der matchede din søgning.",
+      "emptySearchTitle": "Skriv for at søge",
+      "emptySearchMessage": "Indtast et søgeord eller en sætning for at udforske.",
+      "loadMore": "Indlæs {{count}} mere",
+      "groups": {
+        "all": "Alle områder",
+        "customer": "Kunder",
+        "customerGroup": "Kundegrupper",
+        "product": "Produkter",
+        "productVariant": "Produktvarianter",
+        "inventory": "Inventar",
+        "reservation": "Reservationer",
+        "category": "Kategorier",
+        "collection": "Samlinger",
+        "order": "Ordrer",
+        "promotion": "Kampagner",
+        "campaign": "Kampagner",
+        "priceList": "Prislister",
+        "user": "Brugere",
+        "region": "Regioner",
+        "taxRegion": "Skatteregioner",
+        "returnReason": "Returårsager",
+        "salesChannel": "Salgskanaler",
+        "productType": "Produkttyper",
+        "productTag": "Produkt Tags",
+        "location": "Lokationer",
+        "shippingProfile": "Forsendelsesprofiler",
+        "publishableApiKey": "Publicerbare API-nøgler",
+        "secretApiKey": "Hemmelige API-nøgler",
+        "command": "Kommandoer",
+        "navigation": "Navigation"
+      }
+    },
+    "keyboardShortcuts": {
+      "pageShortcut": "Hop til",
+      "settingShortcut": "Indstillinger",
+      "commandShortcut": "Kommandoer",
+      "then": "derefter",
+      "navigation": {
+        "goToOrders": "Ordrer",
+        "goToProducts": "Produkter",
+        "goToCollections": "Samlinger",
+        "goToCategories": "Kategorier",
+        "goToCustomers": "Kunder",
+        "goToCustomerGroups": "Kundegrupper",
+        "goToInventory": "Inventar",
+        "goToReservations": "Forbehold",
+        "goToPriceLists": "Prislister",
+        "goToPromotions": "Kampagner",
+        "goToCampaigns": "Kampagner"
+      },
+      "settings": {
+        "goToSettings": "Indstillinger",
+        "goToStore": "Butik",
+        "goToUsers": "Brugere",
+        "goToRegions": "Regioner",
+        "goToTaxRegions": "Skatteregioner",
+        "goToSalesChannels": "Salgskanaler",
+        "goToProductTypes": "Produkttyper",
+        "goToLocations": "Steder",
+        "goToPublishableApiKeys": "Publicerbare API-nøgler",
+        "goToSecretApiKeys": "Hemmelige API-nøgler",
+        "goToWorkflows": "Arbejdsgange",
+        "goToProfile": "Profil",
+        "goToReturnReasons": "Returårsager"
+      }
+    },
+    "menus": {
+      "user": {
+        "documentation": "Dokumentation",
+        "changelog": "Ændringslog",
+        "shortcuts": "Genveje",
+        "profileSettings": "Profilindstillinger",
+        "theme": {
+          "label": "Tema",
+          "dark": "Mørk",
+          "light": "Lys",
+          "system": "System"
+        }
+      },
+      "store": {
+        "label": "Butik",
+        "storeSettings": "Butiksindstillinger"
+      },
+      "actions": {
+        "logout": "Log ud"
+      }
+    },
+    "nav": {
+      "accessibility": {
+        "title": "Navigation",
+        "description": "Navigationsmenu til dashboardet."
+      },
+      "common": {
+        "extensions": "Udvidelser"
+      },
+      "main": {
+        "store": "Butik",
+        "storeSettings": "Butiksindstillinger"
+      },
+      "settings": {
+        "header": "Indstillinger",
+        "general": "Generelt",
+        "developer": "Udvikler",
+        "myAccount": "Min konto"
+      }
+    }
+  },
+  "dataGrid": {
+    "columns": {
+      "view": "Visning",
+      "resetToDefault": "Nulstil til standard",
+      "disabled": "Ændring af hvilke kolonner der er synlige er deaktiveret."
+    },
+    "shortcuts": {
+      "label": "Genveje",
+      "commands": {
+        "undo": "Fortryd",
+        "redo": "Gentag",
+        "copy": "Kopiér",
+        "paste": "Indsæt",
+        "edit": "Rediger",
+        "delete": "Slet",
+        "clear": "Ryd",
+        "moveUp": "Flyt op",
+        "moveDown": "Flyt ned",
+        "moveLeft": "Flyt til venstre",
+        "moveRight": "Flyt til højre",
+        "moveTop": "Flyt til toppen",
+        "moveBottom": "Flyt til bunden",
+        "selectDown": "Vælg ned",
+        "selectUp": "Vælg op",
+        "selectColumnDown": "Vælg kolonne ned",
+        "selectColumnUp": "Vælg kolonne op",
+        "focusToolbar": "Fokus værktøjslinje",
+        "focusCancel": "Fokus annulleres"
+      }
+    },
+    "errors": {
+      "fixError": "Ret fejl",
+      "count_one": "{{count}} fejl",
+      "count_other": "{{count}} fejl"
+    }
+  },
+  "filters": {
+    "sortLabel": "Sorter",
+    "collapse": {
+      "all": "Skjul alle sammen"
+    },
+    "filterLabel": "Filter",
+    "searchLabel": "Søg",
+    "date": {
+      "today": "I dag",
+      "lastSevenDays": "Sidste 7 dage",
+      "lastThirtyDays": "Sidste 30 dage",
+      "lastNinetyDays": "Sidste 90 dage",
+      "lastTwelveMonths": "Sidste 12 måneder",
+      "custom": "Brugerdefineret",
+      "from": "Fra",
+      "to": "Til",
+      "starting": "Starter",
+      "ending": "Slutning"
+    },
+    "compare": {
+      "lessThan": "Mindre end",
+      "greaterThan": "Større end",
+      "exact": "Præcis",
+      "range": "Rækkevidde",
+      "lessThanLabel": "mindre end {{value}}",
+      "greaterThanLabel": "større end {{value}}",
+      "andLabel": "og"
+    },
+    "sorting": {
+      "alphabeticallyAsc": "A til Z",
+      "alphabeticallyDesc": "Z til A",
+      "dateAsc": "Nyeste først",
+      "dateDesc": "Ældste først"
+    },
+    "radio": {
+      "yes": "Ja",
+      "no": "Nej",
+      "true": "Sandt",
+      "false": "Falsk"
+    },
+    "addFilter": "Tilføj filter"
+  },
+  "errorBoundary": {
+    "badRequestTitle": "400 - Dårlig anmodning",
+    "badRequestMessage": "Anmodningen kunne ikke forstås af serveren på grund af forkert udformet syntaks.",
+    "notFoundTitle": "404 - Der er ingen side på denne adresse",
+    "notFoundMessage": "Tjek URL'en, og prøv igen, eller brug søgelinjen til at finde det, du leder efter.",
+    "internalServerErrorTitle": "500 - Intern serverfejl",
+    "internalServerErrorMessage": "Der opstod en uventet fejl på serveren. Prøv venligst igen senere.",
+    "defaultTitle": "Der opstod en fejl",
+    "defaultMessage": "Der opstod en uventet fejl under gengivelsen af ​​denne side.",
+    "noMatchMessage": "Den side du leder efter findes ikke.",
+    "backToDashboard": "Tilbage til dashboard"
+  },
+  "addresses": {
+    "title": "adresser",
+    "shippingAddress": {
+      "header": "Forsendelsesadresse",
+      "editHeader": "Rediger forsendelsesadresse",
+      "editLabel": "Leveringsadresse",
+      "label": "Leveringsadresse"
+    },
+    "billingAddress": {
+      "header": "Faktureringsadresse",
+      "editHeader": "Rediger faktureringsadresse",
+      "editLabel": "Faktureringsadresse",
+      "label": "Faktureringsadresse",
+      "sameAsShipping": "Samme som leveringsadresse"
+    },
+    "contactHeading": "Kontakt",
+    "locationHeading": "Beliggenhed"
+  },
+  "email": {
+    "editHeader": "Rediger e-mail",
+    "editLabel": "E-mail",
+    "label": "E-mail"
+  },
+  "transferOwnership": {
+    "header": "Overdrage ejerskab",
+    "label": "Overdrage ejerskab",
+    "details": {
+      "order": "Bestil detaljer",
+      "draft": "Udkast til detaljer"
+    },
+    "currentOwner": {
+      "label": "Nuværende ejer",
+      "hint": "Den nuværende ejer af ordren."
+    },
+    "newOwner": {
+      "label": "Ny ejer",
+      "hint": "Den nye ejer at overføre ordren til."
+    },
+    "validation": {
+      "mustBeDifferent": "Den nye ejer skal være forskellig fra den nuværende ejer.",
+      "required": "Ny ejer er påkrævet."
+    }
+  },
+  "sales_channels": {
+    "availableIn": "Tilgængelig i <0>{{x}}</0> af <1>{{y}}</1> salgskanaler"
+  },
+  "products": {
+    "domain": "Produkter",
+    "list": {
+      "noRecordsMessage": "Opret dit første produkt for at begynde at sælge."
+    },
+    "edit": {
+      "header": "Rediger produkt",
+      "description": "Rediger produktoplysningerne.",
+      "successToast": "Produkt {{title}} blev opdateret."
+    },
+    "create": {
+      "title": "Opret produkt",
+      "description": "Opret et nyt produkt.",
+      "header": "Generelt",
+      "tabs": {
+        "details": "Detaljer",
+        "organize": "Organiser",
+        "variants": "Varianter",
+        "inventory": "Inventarsæt"
+      },
+      "errors": {
+        "variants": "Vælg venligst mindst én variant.",
+        "options": "Opret venligst mindst én mulighed.",
+        "uniqueSku": "SKU skal være unik."
+      },
+      "inventory": {
+        "heading": "Inventarsæt",
+        "label": "Tilføj lagervarer til variantens lagersæt.",
+        "itemPlaceholder": "Vælg lagervare",
+        "quantityPlaceholder": "Hvor mange af disse er nødvendige til sættet?"
+      },
+      "variants": {
+        "header": "Varianter",
+        "subHeadingTitle": "Ja, dette er et produkt med varianter",
+        "subHeadingDescription": "Når det ikke er markeret, opretter vi en standardvariant til dig",
+        "optionTitle": {
+          "placeholder": "Størrelse"
+        },
+        "optionValues": {
+          "placeholder": "Lille, mellem, stor"
+        },
+        "productVariants": {
+          "label": "Produktvarianter",
+          "hint": "Denne rangering vil påvirke varianternes rækkefølge i din butiksfacade.",
+          "alert": "Tilføj muligheder for at oprette varianter.",
+          "tip": "Varianter, der ikke er markeret, oprettes ikke. Du kan altid oprette og redigere varianter bagefter, men denne liste passer til variationerne i dine produktmuligheder."
+        },
+        "productOptions": {
+          "label": "Produktmuligheder",
+          "hint": "Definer mulighederne for produktet, f.eks. farve, størrelse osv."
+        }
+      },
+      "successToast": "Produktet {{title}} blev oprettet."
+    },
+    "export": {
+      "header": "Eksporter produktliste",
+      "description": "Eksporter produktlisten til en CSV-fil.",
+      "success": {
+        "title": "Vi behandler din eksport",
+        "description": "Eksport af data kan tage et par minutter. Vi giver dig besked, når vi er færdige."
+      },
+      "filters": {
+        "title": "Filtre",
+        "description": "Anvend filtre i tabeloversigten for at justere denne visning"
+      },
+      "columns": {
+        "title": "Kolonner",
+        "description": "Tilpas de eksporterede data til at opfylde specifikke behov"
+      }
+    },
+    "import": {
+      "header": "Importer produktliste",
+      "uploadLabel": "Importer produkter",
+      "uploadHint": "Træk og slip en CSV-fil, eller klik for at uploade",
+      "description": "Importer produkter ved at levere en CSV-fil i et foruddefineret format",
+      "template": {
+        "title": "Er du i tvivl om, hvordan du arrangerer din liste?",
+        "description": "Download skabelonen nedenfor for at sikre, at du følger det korrekte format."
+      },
+      "upload": {
+        "title": "Upload en CSV-fil",
+        "description": "Gennem import kan du tilføje eller opdatere produkter. For at opdatere eksisterende produkter skal du bruge det eksisterende håndtag og ID, for at opdatere eksisterende varianter skal du bruge det eksisterende ID. Du vil blive bedt om bekræftelse, før vi importerer produkter.",
+        "preprocessing": "Forbehandler...",
+        "productsToCreate": "Produkter vil blive oprettet",
+        "productsToUpdate": "Produkter vil blive opdateret"
+      },
+      "success": {
+        "title": "Vi behandler din import",
+        "description": "Import af data kan tage et stykke tid. Vi giver dig besked, når vi er færdige."
+      }
+    },
+    "deleteWarning": "Du er ved at slette produktet {{title}}. Denne handling kan ikke fortrydes.",
+    "variants": {
+      "header": "Varianter",
+      "empty": {
+        "heading": "Ingen varianter",
+        "description": "Der er ingen varianter at vise."
+      },
+      "filtered": {
+        "heading": "Ingen resultater",
+        "description": "Ingen varianter matcher de aktuelle filterkriterier."
+      }
+    },
+    "attributes": "Attributter",
+    "editAttributes": "Rediger attributter",
+    "editOptions": "Rediger indstillinger",
+    "editPrices": "Rediger priser",
+    "media": {
+      "label": "Medier",
+      "editHint": "Tilføj medier til produktet for at vise det i din butiksfacade.",
+      "manageImageVariants": "Administrer tilknyttede varianter",
+      "makeThumbnail": "Lav thumbnail",
+      "uploadImagesLabel": "Upload billeder",
+      "uploadImagesHint": "Træk og slip billeder her, eller klik for at uploade.",
+      "invalidFileType": "'{{name}}' er ikke en understøttet filtype. Understøttede filtyper er: {{types}}.",
+      "fileTooLarge": "En eller flere filer overskrider den maksimale filstørrelse på {{size}}: {{name}}",
+      "failedToUpload": "Kunne ikke uploade det tilføjede medie. Prøv venligst igen.",
+      "deleteWarning_one": "Du er ved at slette {{count}}-billede. Denne handling kan ikke fortrydes.",
+      "deleteWarning_other": "Du er ved at slette {{count}}-billeder. Denne handling kan ikke fortrydes.",
+      "deleteWarningWithThumbnail_one": "Du er ved at slette {{count}}-billedet inklusive miniaturebilledet. Denne handling kan ikke fortrydes.",
+      "deleteWarningWithThumbnail_other": "Du er ved at slette {{count}}-billeder inklusive miniaturebilledet. Denne handling kan ikke fortrydes.",
+      "thumbnailTooltip": "Miniaturebillede",
+      "galleryLabel": "Galleri",
+      "downloadImageLabel": "Download det aktuelle billede",
+      "deleteImageLabel": "Slet det aktuelle billede",
+      "emptyState": {
+        "header": "Ingen medier endnu",
+        "description": "Tilføj medier for at vise det i din butiksfacade.",
+        "action": "Tilføj medier"
+      },
+      "successToast": "Mediet blev opdateret.",
+      "variantImages": "Variant billeder",
+      "showAvailableImages": "Vis tilgængelige billeder",
+      "availableImages": "Vælg billeder",
+      "selectToAdd": "Tilføj produktbilleder til varianten. For at tilføje nye billeder skal du først tilføje dem til produktet.",
+      "removeSelected": "Fjern valgte"
+    },
+    "variantMedia": {
+      "label": "Variant medie",
+      "manageVariants": "Administrer varianter",
+      "addToMultipleVariants": "Tilføj til flere varianter",
+      "manageVariantsDescription": "Administrer tilknyttede varianter for billedet",
+      "successToast": "Billedvarianter blev opdateret.",
+      "emptyState": {
+        "header": "Ingen medier endnu",
+        "description": "Føj medier til varianten for at vise den i din butiksfacade.",
+        "action": "Tilføj medier"
+      }
+    },
+    "discountableHint": "Når det ikke er markeret, vil rabatter ikke blive anvendt på dette produkt.",
+    "noSalesChannels": "Ikke tilgængelig i nogen salgskanaler",
+    "variantCount_one": "{{count}} variant",
+    "variantCount_other": "{{count}} varianter",
+    "deleteVariantWarning": "Du er ved at slette varianten {{title}}. Denne handling kan ikke fortrydes.",
+    "productStatus": {
+      "draft": "Udkast",
+      "published": "Udgivet",
+      "proposed": "Foreslået",
+      "rejected": "Afvist"
+    },
+    "columns": {
+      "product_display": "Produkt",
+      "variants_count": "Varianter",
+      "sales_channels_display": "Salgskanaler",
+      "collection": "Samling",
+      "status": "Status",
+      "thumbnail": "Miniaturebillede",
+      "title": "Titel",
+      "handle": "Håndtag",
+      "created_at": "Oprettet",
+      "updated_at": "Opdateret"
+    },
+    "fields": {
+      "title": {
+        "label": "Titel",
+        "hint": "Giv dit produkt en kort og klar titel.<0/>50-60 tegn er den anbefalede længde for søgemaskiner.",
+        "placeholder": "Vinterjakke"
+      },
+      "subtitle": {
+        "label": "Undertekst",
+        "placeholder": "Varm og hyggelig"
+      },
+      "handle": {
+        "label": "Håndtag",
+        "tooltip": "Håndtaget bruges til at referere til produktet i din butiksfacade. Hvis det ikke er angivet, vil håndtaget blive genereret ud fra produkttitlen.",
+        "placeholder": "vinter-jakke"
+      },
+      "description": {
+        "label": "Beskrivelse",
+        "hint": "Giv dit produkt en kort og klar beskrivelse.<0/>120-160 tegn er den anbefalede længde for søgemaskiner.",
+        "placeholder": "En varm og hyggelig jakke"
+      },
+      "discountable": {
+        "label": "Til rabat",
+        "hint": "Når det ikke er markeret, vil rabatter ikke blive anvendt på dette produkt"
+      },
+      "shipping_profile": {
+        "label": "Forsendelsesprofil",
+        "hint": "Tilslut produktet til en forsendelsesprofil"
+      },
+      "type": {
+        "label": "Type"
+      },
+      "collection": {
+        "label": "Samling"
+      },
+      "categories": {
+        "label": "Kategorier"
+      },
+      "tags": {
+        "label": "Tags"
+      },
+      "sales_channels": {
+        "label": "Salgskanaler",
+        "hint": "Dette produkt vil kun være tilgængeligt i standardsalgskanalen, hvis det ikke berøres."
+      },
+      "countryOrigin": {
+        "label": "Oprindelsesland"
+      },
+      "material": {
+        "label": "Materiale"
+      },
+      "width": {
+        "label": "Bredde"
+      },
+      "length": {
+        "label": "Længde"
+      },
+      "height": {
+        "label": "Højde"
+      },
+      "weight": {
+        "label": "Vægt"
+      },
+      "options": {
+        "label": "Produktmuligheder",
+        "hint": "Indstillinger bruges til at definere produktets farve, størrelse osv.",
+        "add": "Tilføj mulighed",
+        "optionTitle": "Option titel",
+        "optionTitlePlaceholder": "Farve",
+        "variations": "Variationer (kommasepareret)",
+        "variantionsPlaceholder": "Rød, blå, grøn"
+      },
+      "variants": {
+        "label": "Produktvarianter",
+        "hint": "Varianter, der ikke er markeret, vil ikke blive oprettet. Denne rangering vil påvirke, hvordan varianterne rangeres i din frontend."
+      },
+      "mid_code": {
+        "label": "Midt kode"
+      },
+      "hs_code": {
+        "label": "HS kode"
+      }
+    },
+    "variant": {
+      "edit": {
+        "header": "Rediger variant",
+        "success": "Produktvarianten er redigeret"
+      },
+      "create": {
+        "header": "Variant detaljer"
+      },
+      "deleteWarning": "Er du sikker på, at du vil slette denne variant?",
+      "pricesPagination": "1 - {{current}} af {{total}} priser",
+      "tableItemAvailable": "{{availableCount}} tilgængelig",
+      "tableItem_one": "{{availableCount}} tilgængelig på {{locationCount}} lokation",
+      "tableItem_other": "{{availableCount}} tilgængelig på {{locationCount}} lokationer",
+      "inventory": {
+        "notManaged": "Ikke styret",
+        "manageItems": "Administrer lagervarer",
+        "notManagedDesc": "Beholdning administreres ikke for denne variant. Slå 'Administrer beholdning' til for at spore variantens beholdning.",
+        "manageKit": "Administrer lagersæt",
+        "navigateToItem": "Gå til lagervare",
+        "actions": {
+          "inventoryItems": "Gå til lagervare",
+          "inventoryKit": "Vis lagervarer"
+        },
+        "inventoryKit": "Inventarsæt",
+        "inventoryKitHint": "Består denne variant af flere inventarvarer?",
+        "validation": {
+          "itemId": "Vælg venligst lagervare.",
+          "quantity": "Mængde er påkrævet. Indtast venligst et positivt tal."
+        },
+        "header": "Lager & inventar",
+        "editItemDetails": "Rediger elementdetaljer",
+        "manageInventoryLabel": "Administrer inventar",
+        "manageInventoryHint": "Når det er aktiveret, ændrer vi lagermængden for dig, når ordrer og returneringer oprettes.",
+        "allowBackordersLabel": "Tillad restordrer",
+        "allowBackordersHint": "Når det er aktiveret, kan kunderne købe varianten, selvom der ikke er nogen tilgængelig mængde.",
+        "toast": {
+          "levelsBatch": "Lagerniveauer opdateret.",
+          "update": "Lagervare blev opdateret.",
+          "updateLevel": "Beholdningsniveau blev opdateret.",
+          "itemsManageSuccess": "Beholdningsvarer blev opdateret."
+        }
+      }
+    },
+    "options": {
+      "header": "Valgmuligheder",
+      "edit": {
+        "header": "Redigeringsmulighed",
+        "successToast": "Indstilling {{title}} blev opdateret."
+      },
+      "create": {
+        "header": "Opret mulighed",
+        "successToast": "Indstilling {{title}} blev oprettet."
+      },
+      "deleteWarning": "Du er ved at slette produktindstillingen: {{title}}. Denne handling kan ikke fortrydes."
+    },
+    "organization": {
+      "header": "Organiser",
+      "edit": {
+        "header": "Rediger organisation",
+        "toasts": {
+          "success": "Opdateret organisationen af ​​{{title}}."
+        }
+      }
+    },
+    "stock": {
+      "heading": "Administrer produktlagerniveauer og lokationer",
+      "description": "Opdater lagerbeholdningsniveauerne for alle produktets varianter.",
+      "loading": "Hold ud, kan tage et øjeblik...",
+      "tooltips": {
+        "alreadyManaged": "Denne lagervare kan allerede redigeres under {{title}}.",
+        "alreadyManagedWithSku": "Denne lagervare kan allerede redigeres under {{title}} ({{sku}})."
+      }
+    },
+    "shippingProfile": {
+      "header": "Forsendelseskonfiguration",
+      "edit": {
+        "header": "Forsendelseskonfiguration",
+        "toasts": {
+          "success": "Forsendelsesprofilen for {{title}} er blevet opdateret."
+        }
+      },
+      "create": {
+        "errors": {
+          "required": "Forsendelsesprofil er påkrævet"
+        }
+      }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "header": "Produkt slettet",
+          "description": "{{title}} blev slettet."
+        },
+        "error": {
+          "header": "Kunne ikke slette produktet"
+        }
+      }
+    }
+  },
+  "collections": {
+    "domain": "Samlinger",
+    "subtitle": "Organiser produkter i kollektioner.",
+    "createCollection": "Opret samling",
+    "createCollectionHint": "Opret en ny kollektion for at organisere dine produkter.",
+    "createSuccess": "Samlingen blev oprettet.",
+    "editCollection": "Rediger samling",
+    "handleTooltip": "Håndtaget bruges til at referere til samlingen i din butiksfacade. Hvis det ikke er angivet, vil håndtaget blive genereret ud fra samlingstitlen.",
+    "deleteWarning": "Du er ved at slette samlingen {{title}}. Denne handling kan ikke fortrydes.",
+    "removeSingleProductWarning": "Du er ved at fjerne produktet {{title}} fra samlingen. Denne handling kan ikke fortrydes.",
+    "removeProductsWarning_one": "Du er ved at fjerne {{count}}-produktet fra samlingen. Denne handling kan ikke fortrydes.",
+    "removeProductsWarning_other": "Du er ved at fjerne {{count}}-produkter fra kollektionen. Denne handling kan ikke fortrydes.",
+    "products": {
+      "list": {
+        "noRecordsMessage": "Der er ingen produkter i kollektionen."
+      },
+      "add": {
+        "successToast_one": "Produktet blev føjet til samlingen.",
+        "successToast_other": "Produkter blev føjet til samlingen."
+      },
+      "remove": {
+        "successToast_one": "Produktet blev fjernet fra samlingen.",
+        "successToast_other": "Produkter blev fjernet fra samlingen."
+      }
+    }
+  },
+  "categories": {
+    "domain": "Kategorier",
+    "subtitle": "Organiser produkter i kategorier, og administrer disse kategoriers rangering og hierarki.",
+    "create": {
+      "header": "Opret kategori",
+      "hint": "Opret en ny kategori for at organisere dine produkter.",
+      "tabs": {
+        "details": "Detaljer",
+        "organize": "Organiser rangering"
+      },
+      "successToast": "Kategori {{name}} blev oprettet."
+    },
+    "edit": {
+      "header": "Rediger kategori",
+      "description": "Rediger kategorien for at opdatere dens detaljer.",
+      "successToast": "Kategori blev opdateret."
+    },
+    "delete": {
+      "confirmation": "Du er ved at slette kategorien {{name}}. Denne handling kan ikke fortrydes.",
+      "successToast": "Kategori {{name}} blev slettet."
+    },
+    "products": {
+      "add": {
+        "disabledTooltip": "Produktet er allerede i denne kategori.",
+        "successToast_one": "Tilføjet {{count}} produkt til kategorien.",
+        "successToast_other": "Tilføjet {{count}} produkter til kategorien."
+      },
+      "remove": {
+        "confirmation_one": "Du er ved at fjerne {{count}} produkt fra kategorien. Denne handling kan ikke fortrydes.",
+        "confirmation_other": "Du er ved at fjerne {{count}} produkter fra kategorien. Denne handling kan ikke fortrydes.",
+        "successToast_one": "Fjernet {{count}} produkt fra kategorien.",
+        "successToast_other": "Fjernede {{count}} produkter fra kategorien."
+      },
+      "list": {
+        "noRecordsMessage": "Der er ingen produkter i kategorien."
+      }
+    },
+    "organize": {
+      "header": "Organiser",
+      "action": "Rediger rangering"
+    },
+    "fields": {
+      "visibility": {
+        "label": "Synlighed",
+        "internal": "Internt",
+        "public": "Offentlig"
+      },
+      "status": {
+        "label": "Status",
+        "active": "Aktiv",
+        "inactive": "Inaktiv"
+      },
+      "path": {
+        "label": "Sti",
+        "tooltip": "Vis hele stien til kategorien."
+      },
+      "children": {
+        "label": "Børn"
+      },
+      "new": {
+        "label": "Ny"
+      }
+    }
+  },
+  "inventory": {
+    "domain": "Inventar",
+    "subtitle": "Administrer dine lagervarer",
+    "reserved": "Reserveret",
+    "available": "Tilgængelig",
+    "locationLevels": "Steder",
+    "associatedVariants": "Tilknyttede varianter",
+    "manageLocations": "Administrer lokationer",
+    "manageLocationQuantity": "Administrer placeringsmængde",
+    "deleteWarning": "Du er ved at slette en lagervare. Denne handling kan ikke fortrydes.",
+    "editItemDetails": "Rediger elementdetaljer",
+    "quantityAcrossLocations": "{{quantity}} på tværs af {{locations}}-lokationer",
+    "levelDeleted": "Beholdningsniveau blev slettet.",
+    "create": {
+      "title": "Opret lagervare",
+      "details": "Detaljer",
+      "availability": "Tilgængelighed",
+      "locations": "Steder",
+      "attributes": "Attributter",
+      "requiresShipping": "Kræver forsendelse",
+      "requiresShippingHint": "Kræver lagervare forsendelse?",
+      "successToast": "Lagervare blev oprettet."
+    },
+    "reservation": {
+      "header": "Reservation af {{itemName}}",
+      "editItemDetails": "Rediger reservation",
+      "lineItemId": "Linjepost-id",
+      "orderID": "Ordre-id",
+      "description": "Beskrivelse",
+      "location": "Beliggenhed",
+      "inStockAtLocation": "På lager her",
+      "availableAtLocation": "Tilgængelig på dette sted",
+      "reservedAtLocation": "Reserveret på dette sted",
+      "reservedAmount": "Reservebeløb",
+      "create": "Opret reservation",
+      "itemToReserve": "Vare der skal reserveres",
+      "quantityPlaceholder": "Hvor meget vil du reservere?",
+      "descriptionPlaceholder": "Hvilken type reservation er dette?",
+      "successToast": "Reservationen blev oprettet.",
+      "updateSuccessToast": "Reservationen blev opdateret.",
+      "deleteSuccessToast": "Reservationen blev slettet.",
+      "errors": {
+        "noAvaliableQuantity": "Lagerplacering har ikke tilgængelig mængde.",
+        "quantityOutOfRange": "Minimumsmængde er 1 og maksimal mængde er {{max}}"
+      }
+    },
+    "adjustInventory": {
+      "errors": {
+        "stockedQuantity": "Lagermængde kan ikke opdateres til mindre end den reserverede mængde {{quantity}}."
+      }
+    },
+    "toast": {
+      "updateLocations": "Placeringer blev opdateret.",
+      "updateLevel": "Beholdningsniveau blev opdateret.",
+      "updateItem": "Lagervare blev opdateret."
+    },
+    "stock": {
+      "title": "Opdater lagerniveauer",
+      "description": "Opdater lagerbeholdningsniveauerne for de valgte lagervarer.",
+      "action": "Rediger lagerbeholdninger",
+      "placeholder": "Ikke aktiveret",
+      "disablePrompt_one": "Du er ved at deaktivere {{count}} placeringsniveau. Denne handling kan ikke fortrydes.",
+      "disablePrompt_other": "Du er ved at deaktivere {{count}} placeringsniveauer. Denne handling kan ikke fortrydes.",
+      "disabledToggleTooltip": "Kan ikke deaktivere: Ryd indgående og /or reserveret antal før deaktivering.",
+      "successToast": "Beholdningsniveauer blev opdateret."
+    }
+  },
+  "giftCards": {
+    "domain": "Gavekort",
+    "editGiftCard": "Rediger gavekort",
+    "createGiftCard": "Opret gavekort",
+    "createGiftCardHint": "Opret manuelt et gavekort, der kan bruges som betalingsmetode i din butik.",
+    "selectRegionFirst": "Vælg først en region",
+    "deleteGiftCardWarning": "Du er ved at slette gavekortet {{code}}. Denne handling kan ikke fortrydes.",
+    "balanceHigherThanValue": "Saldoen kan ikke være højere end det oprindelige beløb.",
+    "balanceLowerThanZero": "Saldoen kan ikke være negativ.",
+    "expiryDateHint": "Lande har forskellige love vedrørende gavekorts udløbsdatoer. Sørg for at tjekke lokale regler, før du indstiller en udløbsdato.",
+    "regionHint": "Ændring af gavekortets region vil også ændre dets valuta, hvilket potentielt påvirker dets pengeværdi.",
+    "enabledHint": "Angiv, om gavekortet er aktiveret eller deaktiveret.",
+    "balance": "Balance",
+    "currentBalance": "Nuværende saldo",
+    "initialBalance": "Indledende balance",
+    "personalMessage": "Personlig besked",
+    "recipient": "Modtager"
+  },
+  "customers": {
+    "domain": "Kunder",
+    "list": {
+      "noRecordsMessage": "Dine kunder vil dukke op her."
+    },
+    "create": {
+      "header": "Opret kunde",
+      "hint": "Opret en ny kunde og administrer deres detaljer.",
+      "successToast": "Kunde {{email}} blev oprettet."
+    },
+    "groups": {
+      "label": "Kundegrupper",
+      "remove": "Er du sikker på, at du vil fjerne kunden fra \"{{name}}\" kundegruppe?",
+      "removeMany": "Er du sikker på, at du vil fjerne kunder fra følgende kundegrupper: {{groups}}?",
+      "alreadyAddedTooltip": "Kunden er allerede i denne kundegruppe.",
+      "list": {
+        "noRecordsMessage": "Denne kunde tilhører ikke nogen gruppe."
+      },
+      "add": {
+        "success": "Kunde tilføjet til: {{groups}}.",
+        "list": {
+          "noRecordsMessage": "Opret en kundegruppe først."
+        }
+      },
+      "removed": {
+        "success": "Kunde fjernet fra: {{groups}}.",
+        "list": {
+          "noRecordsMessage": "Opret en kundegruppe først."
+        }
+      }
+    },
+    "edit": {
+      "header": "Rediger kunde",
+      "emailDisabledTooltip": "E-mailadressen kan ikke ændres for registrerede kunder.",
+      "successToast": "Kunde {{email}} blev opdateret."
+    },
+    "delete": {
+      "title": "Slet kunde",
+      "description": "Du er ved at slette kunden {{email}}. Denne handling kan ikke fortrydes.",
+      "successToast": "Kunden {{email}} blev slettet."
+    },
+    "fields": {
+      "guest": "Gæst",
+      "registered": "Registreret",
+      "groups": "Grupper"
+    },
+    "registered": "Registreret",
+    "guest": "Gæst",
+    "hasAccount": "Har konto",
+    "addresses": {
+      "title": "adresser",
+      "fields": {
+        "addressName": "Adressenavn",
+        "address1": "Adresse 1",
+        "address2": "Adresse 2",
+        "city": "By",
+        "province": "provins",
+        "postalCode": "postnummer",
+        "country": "Land",
+        "phone": "Telefon",
+        "company": "Firma",
+        "countryCode": "Landekode",
+        "provinceCode": "Provins kode"
+      },
+      "create": {
+        "header": "Opret adresse",
+        "hint": "Opret en ny adresse til kunden.",
+        "successToast": "Adressen blev oprettet."
+      }
+    }
+  },
+  "customerGroups": {
+    "domain": "Kundegrupper",
+    "subtitle": "Organiser kunder i grupper. Grupper kan have forskellige kampagner og priser.",
+    "list": {
+      "empty": {
+        "heading": "Ingen kundegrupper",
+        "description": "Der er ingen kundegrupper at vise."
+      },
+      "filtered": {
+        "heading": "Ingen resultater",
+        "description": "Ingen kundegrupper matcher de aktuelle filterkriterier."
+      }
+    },
+    "create": {
+      "header": "Opret kundegruppe",
+      "hint": "Opret en ny kundegruppe for at segmentere dine kunder.",
+      "successToast": "Kundegruppen {{name}} blev oprettet."
+    },
+    "edit": {
+      "header": "Rediger kundegruppe",
+      "successToast": "Kundegruppe {{name}} blev opdateret."
+    },
+    "delete": {
+      "title": "Slet kundegruppe",
+      "description": "Du er ved at slette kundegruppen {{name}}. Denne handling kan ikke fortrydes.",
+      "successToast": "Kundegruppen {{name}} blev slettet."
+    },
+    "customers": {
+      "alreadyAddedTooltip": "Kunden er allerede føjet til gruppen.",
+      "add": {
+        "successToast_one": "Kunden blev føjet til gruppen.",
+        "successToast_other": "Kunder blev føjet til gruppen.",
+        "list": {
+          "noRecordsMessage": "Opret en kunde først."
+        }
+      },
+      "remove": {
+        "title_one": "Fjern kunde",
+        "title_other": "Fjern kunder",
+        "description_one": "Du er ved at fjerne {{count}}-kunde fra kundegruppen. Denne handling kan ikke fortrydes.",
+        "description_other": "Du er ved at fjerne {{count}}-kunder fra kundegruppen. Denne handling kan ikke fortrydes."
+      },
+      "list": {
+        "noRecordsMessage": "Denne gruppe har ikke kunder."
+      }
+    }
+  },
+  "orders": {
+    "giftCardsStoreCreditLines": "Gavekort og kreditlinjer",
+    "creditLines": {
+      "title": "Kreditlinjer",
+      "total": "Summen af alle kreditlinjer",
+      "creditOrDebit": "Kredit/debet",
+      "createCreditLine": "Opret kreditgrænse",
+      "createCreditLineSuccess": "Kreditgrænsen blev oprettet",
+      "createCreditLineError": "Fejl ved oprettelse af kreditgrænse",
+      "createCreditLineDescription": "Opret en kreditgrænse for beløb {{amount}}",
+      "operation": "Betjening",
+      "credit": "Kredit",
+      "creditDescription": "Tilføjer en positiv sum til ordren",
+      "debit": "Debet",
+      "debitDescription": "Trækker en negativ sum fra ordren"
+    },
+    "balanceSettlement": {
+      "title": "Balanceafregning",
+      "settlementType": "Afregningstype",
+      "settlementTypes": {
+        "paymentMethod": "Betalingsmetode",
+        "paymentMethodDescription": "Refunder beløbet til betalingsmetoden",
+        "creditLine": "Butikskredit",
+        "creditLineDescription": "Refusionsbeløb som butikskredit"
+      }
+    },
+    "domain": "Ordrer",
+    "claim": "Påstand",
+    "exchange": "Udveksling",
+    "return": "Retur",
+    "cancelWarning": "Du er ved at annullere ordren {{id}}. Denne handling kan ikke fortrydes.",
+    "orderCanceled": "Ordren blev annulleret",
+    "onDateFromSalesChannel": "{{date}} fra {{salesChannel}}",
+    "list": {
+      "noRecordsMessage": "Dine ordrer vises her."
+    },
+    "export": {
+      "header": "Eksporter ordreliste",
+      "description": "Eksporter ordrelisten til en CSV-fil.",
+      "success": {
+        "title": "Eksporten startede",
+        "description": "Du får besked, når eksporten er klar."
+      },
+      "filters": {
+        "title": "Filtre",
+        "description": "Følgende filtre vil blive anvendt på eksporten."
+      }
+    },
+    "status": {
+      "not_paid": "Ikke betalt",
+      "pending": "Afventer",
+      "completed": "Afsluttet",
+      "draft": "Udkast",
+      "archived": "Arkiveret",
+      "canceled": "Annulleret",
+      "requires_action": "Kræver handling"
+    },
+    "summary": {
+      "requestReturn": "Anmod om retur",
+      "allocateItems": "Tildel varer",
+      "editOrder": "Rediger ordre",
+      "editOrderContinue": "Fortsæt ordreredigering",
+      "inventoryKit": "Består af {{count}}x inventarartikler",
+      "itemTotal": "Vare i alt",
+      "shippingTotal": "Forsendelse i alt",
+      "discountTotal": "Rabat i alt",
+      "taxTotalIncl": "Skat i alt (inkluderet)",
+      "itemSubtotal": "Vare Subtotal",
+      "shippingSubtotal": "Forsendelse Subtotal",
+      "discountSubtotal": "Rabat Subtotal",
+      "taxTotal": "Skat i alt",
+      "totalAfterDiscount": "Samlet efter rabat"
+    },
+    "transfer": {
+      "title": "Overdrage ejerskab",
+      "requestSuccess": "Ordreoverførselsanmodning sendt til: {{email}}.",
+      "currentOwner": "Nuværende ejer",
+      "newOwner": "Ny ejer",
+      "currentOwnerDescription": "Kunden relaterede i øjeblikket til denne ordre.",
+      "newOwnerDescription": "Kunden at overføre denne ordre til."
+    },
+    "payment": {
+      "title": "Betalinger",
+      "isReadyToBeCaptured": "Betalingen <0/> er klar til at blive modtaget.",
+      "totalPaidByCustomer": "Samlet betalt af kunde",
+      "totalStoreCreditRefunds": "Samlet tilbagebetaling af butikskredit",
+      "capture": "Optag betaling",
+      "capture_short": "Capture",
+      "refund": "Tilbagebetaling",
+      "markAsPaid": "Marker som betalt",
+      "statusLabel": "Betalingsstatus",
+      "statusTitle": "Betalingsstatus",
+      "status": {
+        "notPaid": "Ikke betalt",
+        "authorized": "Autoriseret",
+        "partiallyAuthorized": "Delvist autoriseret",
+        "awaiting": "Afventer",
+        "captured": "Fanget",
+        "partiallyRefunded": "Delvist refunderet",
+        "partiallyCaptured": "Delvist fanget",
+        "refunded": "Refunderet",
+        "canceled": "Annulleret",
+        "requiresAction": "Kræver handling"
+      },
+      "capturePayment": "Betaling af {{amount}} vil blive fanget.",
+      "capturePaymentSuccess": "Betalingen af {{amount}} blev registreret",
+      "markAsPaidPayment": "Betaling af {{amount}} vil blive markeret som betalt.",
+      "markAsPaidPaymentSuccess": "Betaling af {{amount}} er markeret som betalt",
+      "createRefund": "Opret refusion",
+      "refundPaymentSuccess": "Tilbagebetaling af beløb {{amount}} lykkedes",
+      "createRefundWrongQuantity": "Antal skal være et tal mellem 1 og {{number}}",
+      "refundAmount": "Tilbagebetaling {{ amount }}",
+      "paymentLink": "Kopiér betalingslink til {{ amount }}",
+      "selectPaymentToRefund": "Vælg betaling for at refundere"
+    },
+    "edits": {
+      "title": "Rediger ordre",
+      "confirm": "Bekræft redigering",
+      "confirmText": "Du er ved at bekræfte en ordreredigering. Denne handling kan ikke fortrydes.",
+      "cancel": "Annuller redigering",
+      "currentItems": "Aktuelle varer",
+      "currentItemsDescription": "Juster vareantal eller fjern.",
+      "addItemsDescription": "Du kan tilføje nye varer til ordren.",
+      "addItems": "Tilføj elementer",
+      "amountPaid": "Indbetalt beløb",
+      "newTotal": "Ny total",
+      "differenceDue": "Forskel pga",
+      "create": "Rediger ordre",
+      "currentTotal": "Aktuel total",
+      "noteHint": "Tilføj en intern note til redigeringen",
+      "cancelSuccessToast": "Ordreredigering annulleret",
+      "createSuccessToast": "Ordreredigeringsanmodning oprettet",
+      "activeChangeError": "Der er allerede aktiv ordreændring på ordren (retur, krav, ombytning osv.). Afslut eller annuller ændringen, før du redigerer ordren.",
+      "panel": {
+        "title": "Ordreredigering anmodet",
+        "titlePending": "Ordreredigering afventer"
+      },
+      "toast": {
+        "canceledSuccessfully": "Ordreredigering annulleret",
+        "confirmedSuccessfully": "Ordreredigering bekræftet"
+      },
+      "validation": {
+        "quantityLowerThanFulfillment": "Kan ikke indstille mængden til at være mindre end eller lig med opfyldt mængde"
+      }
+    },
+    "edit": {
+      "email": {
+        "title": "Rediger e-mail",
+        "requestSuccess": "Ordre-e-mail opdateret til {{email}}."
+      },
+      "shippingAddress": {
+        "title": "Rediger leveringsadresse",
+        "requestSuccess": "Ordreforsendelsesadresse opdateret."
+      },
+      "billingAddress": {
+        "title": "Rediger faktureringsadresse",
+        "requestSuccess": "Ordrefaktureringsadresse opdateret."
+      }
+    },
+    "returns": {
+      "create": "Opret retur",
+      "confirm": "Bekræft retur",
+      "confirmText": "Du er ved at bekræfte en retur. Denne handling kan ikke fortrydes.",
+      "inbound": "Indgående",
+      "outbound": "Udgående",
+      "sendNotification": "Send besked",
+      "sendNotificationHint": "Giv kunden besked om returnering.",
+      "returnTotal": "Returnering i alt",
+      "inboundTotal": "Indgående i alt",
+      "estDifference": "Estimeret forskel",
+      "outstandingAmount": "Udestående beløb",
+      "reason": "Årsag",
+      "reasonHint": "Vælg, hvorfor kunden ønsker at returnere varer.",
+      "note": "Bemærk",
+      "noInventoryLevel": "Intet lagerniveau",
+      "noInventoryLevelDesc": "Den valgte lokation har ikke et lagerniveau for de valgte varer. Returneringen kan anmodes om, men den kan ikke modtages, før der er oprettet et lagerniveau for den valgte placering.",
+      "noteHint": "Du kan skrive frit, hvis du vil angive noget.",
+      "location": "Beliggenhed",
+      "locationHint": "Vælg hvilket sted du vil returnere varerne til.",
+      "inboundShipping": "Returforsendelse",
+      "inboundShippingHint": "Vælg hvilken metode du vil bruge.",
+      "returnableQuantityLabel": "Returantal",
+      "refundableAmountLabel": "Refunderbart beløb",
+      "returnRequestedInfo": "{{requestedItemsCount}}x returnering anmodet om",
+      "returnReceivedInfo": "{{requestedItemsCount}}x varer retur modtaget",
+      "itemReceived": "Varer modtaget",
+      "returnRequested": "Returnering anmodet",
+      "damagedItemReceived": "Beskadigede varer modtaget",
+      "damagedItemsReturned": "{{quantity}}x beskadigede varer returneres",
+      "activeChangeError": "Der er en aktiv ordreændring i gang på denne ordre. Afslut eller kasser ændringen først.",
+      "cancel": {
+        "title": "Annuller retur",
+        "description": "Er du sikker på, at du vil annullere returanmodningen?"
+      },
+      "placeholders": {
+        "noReturnShippingOptions": {
+          "title": "Ingen returforsendelsesmuligheder fundet",
+          "hint": "Der blev ikke oprettet nogen returforsendelsesmuligheder for lokationen. Du kan oprette en på <LinkComponent>Placering og forsendelse</LinkComponent>."
+        },
+        "outboundShippingOptions": {
+          "title": "Ingen udgående forsendelsesmuligheder fundet",
+          "hint": "Der blev ikke oprettet nogen udgående forsendelsesmuligheder for lokationen. Du kan oprette en på <LinkComponent>Placering og forsendelse</LinkComponent>."
+        }
+      },
+      "receive": {
+        "action": "Modtag varer",
+        "receiveItems": "{{ returnType }} {{ id }}",
+        "restockAll": "Genopbevar alle varer",
+        "itemsLabel": "Varer modtaget",
+        "title": "Modtag varer til #{{returnId}}",
+        "sendNotificationHint": "Giv kunden besked om modtaget retur.",
+        "inventoryWarning": "Bemærk venligst, at vi automatisk justerer lagerniveauerne baseret på dine input ovenfor.",
+        "writeOffInputLabel": "Hvor mange af genstandene er beskadiget?",
+        "toast": {
+          "success": "Retur modtaget med succes.",
+          "errorLargeValue": "Mængden er større end den ønskede varemængde.",
+          "errorNegativeValue": "Mængde kan ikke være en negativ værdi.",
+          "errorLargeDamagedValue": "Antal beskadigede varer + ikke-beskadiget modtaget antal overstiger den samlede varemængde på returneringen. Reducer venligst mængden af ​​ikke-beskadigede varer."
+        }
+      },
+      "toast": {
+        "canceledSuccessfully": "Returnering blev annulleret",
+        "confirmedSuccessfully": "Retur bekræftet"
+      },
+      "panel": {
+        "title": "Retur påbegyndt",
+        "description": "Der er en åben returanmodning, der skal udfyldes"
+      }
+    },
+    "claims": {
+      "create": "Opret krav",
+      "confirm": "Bekræft krav",
+      "confirmText": "Du er ved at bekræfte et krav. Denne handling kan ikke fortrydes.",
+      "manage": "Administrer krav",
+      "outbound": "Udgående",
+      "outboundItemAdded": "{{itemsCount}}x tilføjet gennem krav",
+      "outboundTotal": "Udgående i alt",
+      "outboundShipping": "Udgående forsendelse",
+      "outboundShippingHint": "Vælg hvilken metode du vil bruge.",
+      "refundAmount": "Estimeret forskel",
+      "carryOverPromotion": "Overfør kampagner",
+      "carryOverPromotionHint": "Anvend ordrens kampagner på reklamationsgenstandene",
+      "carryOverPromotionTooltip": "Kun kampagner af fast type med HVER fordeling og kampagner af procenttype med HVER eller PÅ HVER fordeling kan overføres til udgående kravposter.",
+      "activeChangeError": "Der er en aktiv ordreændring på denne ordre. Afslut eller kasser den forrige ændring.",
+      "actions": {
+        "cancelClaim": {
+          "successToast": "Kravet blev annulleret."
+        }
+      },
+      "cancel": {
+        "title": "Annuller krav",
+        "description": "Er du sikker på, at du vil annullere kravet?"
+      },
+      "tooltips": {
+        "onlyReturnShippingOptions": "Denne liste vil kun bestå af returforsendelsesmuligheder."
+      },
+      "toast": {
+        "canceledSuccessfully": "Kravet blev annulleret",
+        "confirmedSuccessfully": "Krav blev bekræftet"
+      },
+      "panel": {
+        "title": "Krav indledt",
+        "description": "Der er en åben kravanmodning, der skal udfyldes"
+      }
+    },
+    "exchanges": {
+      "create": "Opret Exchange",
+      "manage": "Administrer Exchange",
+      "confirm": "Bekræft udveksling",
+      "confirmText": "Du er ved at bekræfte en udveksling. Denne handling kan ikke fortrydes.",
+      "outbound": "Udgående",
+      "outboundItemAdded": "{{itemsCount}}x tilføjet gennem udveksling",
+      "outboundTotal": "Udgående i alt",
+      "outboundShipping": "Udgående forsendelse",
+      "outboundShippingHint": "Vælg hvilken metode du vil bruge.",
+      "refundAmount": "Estimeret forskel",
+      "carryOverPromotion": "Overfør kampagner",
+      "carryOverPromotionHint": "Anvend ordrens kampagner på byttevarer",
+      "carryOverPromotionTooltip": "Kun faste kampagner med HVER tildeling og kampagner i procent med HVER eller PÅ HVER fordeling kan overføres til udgående byttevarer.",
+      "activeChangeError": "Der er en aktiv ordreændring på denne ordre. Afslut eller kasser den forrige ændring.",
+      "actions": {
+        "cancelExchange": {
+          "successToast": "Exchange blev annulleret."
+        }
+      },
+      "cancel": {
+        "title": "Annuller udveksling",
+        "description": "Er du sikker på, at du vil annullere ombytningen?"
+      },
+      "tooltips": {
+        "onlyReturnShippingOptions": "Denne liste vil kun bestå af returforsendelsesmuligheder."
+      },
+      "toast": {
+        "canceledSuccessfully": "Udvekslingen blev annulleret",
+        "confirmedSuccessfully": "Udveksling bekræftet"
+      },
+      "panel": {
+        "title": "Udveksling påbegyndt",
+        "description": "Der er en åben udvekslingsanmodning, der skal udfyldes"
+      }
+    },
+    "reservations": {
+      "allocatedLabel": "Tildelt",
+      "notAllocatedLabel": "Ikke tildelt"
+    },
+    "allocateItems": {
+      "action": "Tildel varer",
+      "title": "Tildel ordrevarer",
+      "locationDescription": "Vælg hvilken lokation du vil tildele fra.",
+      "itemsToAllocate": "Elementer, der skal tildeles",
+      "itemsToAllocateDesc": "Vælg det antal elementer, du ønsker at tildele",
+      "search": "Søg efter varer",
+      "consistsOf": "Består af {{num}}x inventarartikler",
+      "requires": "Kræver {{num}} pr. variant",
+      "toast": {
+        "created": "Elementer blev tildelt",
+        "error": "Kunne ikke tildele følgende elementer: {{items}}"
+      },
+      "error": {
+        "quantityNotAllocated": "Der er ikke-allokerede varer."
+      }
+    },
+    "shipment": {
+      "title": "Mærke opfyldelse afsendt",
+      "trackingNumber": "Sporingsnummer",
+      "trackingUrl": "Sporings-URL",
+      "labelUrl": "Etiket URL",
+      "addTracking": "Tilføj sporingsnummer",
+      "sendNotification": "Send besked",
+      "sendNotificationHint": "Giv kunden besked om denne forsendelse.",
+      "toastCreated": "Forsendelse blev oprettet."
+    },
+    "fulfillment": {
+      "cancelWarning": "Du er ved at annullere en opfyldelse. Denne handling kan ikke fortrydes.",
+      "markAsDeliveredWarning": "Du er ved at markere opfyldelse som leveret. Denne handling kan ikke fortrydes.",
+      "differentOptionSelected": "Den valgte forsendelsesmulighed er forskellig fra den, som kunden har valgt.",
+      "disabledItemTooltip": "Den forsendelsesmulighed, du har valgt, tillader ikke opfyldelse af denne vare",
+      "unfulfilledItems": "Uopfyldte varer",
+      "statusLabel": "Opfyldelsesstatus",
+      "statusTitle": "Opfyldelsesstatus",
+      "fulfillItems": "Opfyld genstande",
+      "awaitingFulfillmentBadge": "Afventer opfyldelse",
+      "requiresShipping": "Kræver forsendelse",
+      "number": "Opfyldelse #{{number}}",
+      "itemsToFulfill": "Elementer, der skal opfyldes",
+      "create": "Skab opfyldelse",
+      "available": "Tilgængelig",
+      "inStock": "På lager",
+      "markAsShipped": "Marker som afsendt",
+      "markAsPickedUp": "Markér som afhentet",
+      "markAsDelivered": "Mærk som leveret",
+      "itemsToFulfillDesc": "Vælg varer og mængder, der skal opfyldes",
+      "locationDescription": "Vælg, hvilket sted du vil opfylde varer fra.",
+      "sendNotificationHint": "Giv kunder besked om den oprettede opfyldelse.",
+      "methodDescription": "Vælg en anden forsendelsesmetode fra den valgte kunde",
+      "error": {
+        "wrongQuantity": "Kun én vare er tilgængelig til opfyldelse",
+        "wrongQuantity_other": "Antal skal være et tal mellem 1 og {{number}}",
+        "noItems": "Ingen varer at opfylde.",
+        "noShippingOption": "Forsendelsesmulighed er påkrævet",
+        "noLocation": "Placering er påkrævet"
+      },
+      "status": {
+        "notFulfilled": "Ikke opfyldt",
+        "partiallyFulfilled": "Delvist opfyldt",
+        "fulfilled": "Opfyldt",
+        "partiallyShipped": "Delvis afsendt",
+        "shipped": "Sendes",
+        "delivered": "Leveret",
+        "partiallyDelivered": "Delvist leveret",
+        "partiallyReturned": "Delvist returneret",
+        "returned": "Returneret",
+        "canceled": "Annulleret",
+        "requiresAction": "Kræver handling",
+        "awaitingPickup": "Afventer afhentning",
+        "awaitingShipping": "Afventer forsendelse",
+        "awaitingDelivery": "Afventer levering"
+      },
+      "toast": {
+        "created": "Opfyldelse oprettet",
+        "canceled": "Opfyldelsen blev annulleret",
+        "fulfillmentShipped": "Kan ikke annullere en allerede afsendt opfyldelse",
+        "fulfillmentDelivered": "Opfyldelse markeret som leveret",
+        "fulfillmentPickedUp": "Opfyldelse markeret som afhentet"
+      },
+      "trackingLabel": "Sporing",
+      "shippingFromLabel": "Forsendelse fra",
+      "itemsLabel": "genstande"
+    },
+    "refund": {
+      "title": "Opret refusion",
+      "sendNotificationHint": "Giv kunder besked om den oprettede refusion.",
+      "systemPayment": "Systembetaling",
+      "systemPaymentDesc": "En eller flere af dine betalinger er en systembetaling. Vær opmærksom på, at fangster og tilbagebetalinger ikke håndteres af Medusa for sådanne betalinger.",
+      "error": {
+        "amountToLarge": "Kan ikke refundere mere end det oprindelige ordrebeløb.",
+        "amountNegative": "Refusionsbeløbet skal være et positivt tal.",
+        "reasonRequired": "Vælg en refusionsårsag."
+      }
+    },
+    "customer": {
+      "contactLabel": "Kontakt",
+      "editEmail": "Rediger e-mail",
+      "transferOwnership": "Overdrage ejerskab",
+      "editBillingAddress": "Rediger faktureringsadresse",
+      "editShippingAddress": "Rediger leveringsadresse"
+    },
+    "activity": {
+      "header": "Aktivitet",
+      "showMoreActivities_one": "Vis {{count}} mere aktivitet",
+      "showMoreActivities_other": "Vis {{count}} flere aktiviteter",
+      "comment": {
+        "label": "Kommentar",
+        "placeholder": "Efterlad en kommentar",
+        "addButtonText": "Tilføj kommentar",
+        "deleteButtonText": "Slet kommentar"
+      },
+      "from": "Fra",
+      "to": "Til",
+      "events": {
+        "common": {
+          "toReturn": "At vende tilbage",
+          "toSend": "At sende"
+        },
+        "placed": {
+          "title": "Ordre afgivet",
+          "fromSalesChannel": "fra {{salesChannel}}"
+        },
+        "canceled": {
+          "title": "Ordren annulleret"
+        },
+        "payment": {
+          "awaiting": "Afventer betaling",
+          "captured": "Betaling fanget",
+          "canceled": "Betaling annulleret",
+          "refunded": "Betaling refunderet"
+        },
+        "fulfillment": {
+          "created": "Varer opfyldt",
+          "canceled": "Opfyldelse annulleret",
+          "shipped": "Varer afsendt",
+          "delivered": "Varer leveret",
+          "items_one": "{{count}} vare",
+          "items_other": "{{count}} varer"
+        },
+        "return": {
+          "created": "Returnering #{{returnId}} anmodet om",
+          "canceled": "Returnering #{{returnId}} annulleret",
+          "received": "Retur #{{returnId}} modtaget",
+          "items_one": "{{count}} vare returneret",
+          "items_other": "{{count}} varer returneret"
+        },
+        "note": {
+          "comment": "Kommentar",
+          "byLine": "af {{author}}"
+        },
+        "claim": {
+          "created": "Krav #{{claimId}} anmodet",
+          "canceled": "Krav #{{claimId}} annulleret",
+          "itemsInbound": "{{count}} vare at returnere",
+          "itemsOutbound": "{{count}} element at sende"
+        },
+        "exchange": {
+          "created": "Udveksling #{{exchangeId}} anmodet",
+          "canceled": "Udveksling #{{exchangeId}} annulleret",
+          "itemsInbound": "{{count}} vare at returnere",
+          "itemsOutbound": "{{count}} element at sende"
+        },
+        "edit": {
+          "requested": "Ordreredigering #{{editId}} anmodet",
+          "confirmed": "Ordreredigering #{{editId}} bekræftet"
+        },
+        "transfer": {
+          "requested": "Ordreoverførsel #{{transferId}} anmodet",
+          "confirmed": "Ordreoverførsel #{{transferId}} bekræftet",
+          "declined": "Ordreoverførsel #{{transferId}} afvist"
+        },
+        "update_order": {
+          "shipping_address": "Forsendelsesadresse opdateret",
+          "billing_address": "Faktureringsadresse opdateret",
+          "email": "E-mail opdateret"
+        }
+      }
+    },
+    "fields": {
+      "displayId": "Vis ID",
+      "refundableAmount": "Refunderbart beløb",
+      "returnableQuantity": "Returantal"
+    }
+  },
+  "draftOrders": {
+    "domain": "Udkast til ordrer",
+    "deleteWarning": "Du er ved at slette ordreudkastet {{id}}. Denne handling kan ikke fortrydes.",
+    "paymentLinkLabel": "Betalingslink",
+    "cartIdLabel": "Indkøbskurv-id",
+    "markAsPaid": {
+      "label": "Marker som betalt",
+      "warningTitle": "Markér som betalt",
+      "warningDescription": "Du er ved at markere ordrekladden som betalt. Denne handling kan ikke fortrydes, og det vil ikke være muligt at opkræve betaling senere."
+    },
+    "status": {
+      "open": "Åbn",
+      "completed": "Afsluttet"
+    },
+    "create": {
+      "createDraftOrder": "Opret udkast til ordre",
+      "createDraftOrderHint": "Opret en ny ordrekladde for at administrere detaljerne for en ordre, før den afgives.",
+      "chooseRegionHint": "Vælg region",
+      "existingItemsLabel": "Eksisterende varer",
+      "existingItemsHint": "Tilføj eksisterende produkter til ordreudkastet.",
+      "customItemsLabel": "Brugerdefinerede varer",
+      "customItemsHint": "Føj tilpassede varer til ordrekladden.",
+      "addExistingItemsAction": "Tilføj eksisterende elementer",
+      "addCustomItemAction": "Tilføj tilpasset vare",
+      "noCustomItemsAddedLabel": "Ingen brugerdefinerede varer tilføjet endnu",
+      "noExistingItemsAddedLabel": "Ingen eksisterende varer tilføjet endnu",
+      "chooseRegionTooltip": "Vælg først en region",
+      "useExistingCustomerLabel": "Brug eksisterende kunde",
+      "addShippingMethodsAction": "Tilføj forsendelsesmetoder",
+      "unitPriceOverrideLabel": "Tilsidesættelse af enhedspris",
+      "shippingOptionLabel": "Mulighed for forsendelse",
+      "shippingOptionHint": "Vælg forsendelsesmuligheden for udkastet til ordren.",
+      "shippingPriceOverrideLabel": "Fragtpris tilsidesættes",
+      "shippingPriceOverrideHint": "Tilsidesæt forsendelsesprisen for udkastet til ordren.",
+      "sendNotificationLabel": "Send besked",
+      "sendNotificationHint": "Send en meddelelse til kunden, når ordreudkastet er oprettet."
+    },
+    "list": {
+      "noRecordsMessage": "Ingen udkast til ordrer fundet",
+      "description": "Opret en ny ordreudkast for at komme i gang.",
+      "filtered": {
+        "heading": "Ingen resultater fundet",
+        "description": "Ingen udkast til ordrer matcher dine filterkriterier."
+      }
+    },
+    "validation": {
+      "requiredEmailOrCustomer": "E-mail eller kunde er påkrævet.",
+      "requiredItems": "Der kræves mindst én vare.",
+      "invalidEmail": "E-mail skal være en gyldig e-mailadresse."
+    }
+  },
+  "stockLocations": {
+    "domain": "Steder og forsendelse",
+    "list": {
+      "description": "Administrer din butiks lagersteder og forsendelsesmuligheder.",
+      "noRecordsMessage": "Ingen optegnelser",
+      "noRecordsMessageEmpty": "Ingen steder fundet",
+      "noRecordsMessageFiltered": "Der blev ikke fundet nogen steder, der matcher filtrene"
+    },
+    "create": {
+      "header": "Opret lagerplacering",
+      "hint": "Et lagersted er et fysisk sted, hvor produkter opbevares og sendes fra.",
+      "successToast": "Placering {{name}} blev oprettet."
+    },
+    "edit": {
+      "header": "Rediger lagerplacering",
+      "viewInventory": "Se inventar",
+      "successToast": "Placering {{name}} blev opdateret."
+    },
+    "delete": {
+      "confirmation": "Du er ved at slette aktieplaceringen \"{{name}}\". Denne handling kan ikke fortrydes.",
+      "successToast": "Placeringen \"{{name}}\" blev slettet."
+    },
+    "fulfillmentProviders": {
+      "header": "Udbydere af opfyldelse",
+      "shippingOptionsTooltip": "Denne rullemenu vil kun bestå af udbydere, der er aktiveret for denne placering. Tilføj dem til placeringen, hvis rullemenuen er deaktiveret.",
+      "label": "Tilknyttede opfyldelsesudbydere",
+      "connectedTo": "Forbundet til {{count}} af {{total}} opfyldelsesudbydere",
+      "noProviders": "Denne lagerplacering er ikke forbundet med nogen opfyldelsesudbydere.",
+      "action": "Tilslut udbydere",
+      "successToast": "Opfyldelsesudbydere for lagerplacering blev opdateret."
+    },
+    "fulfillmentSets": {
+      "pickup": {
+        "header": "Afhentning"
+      },
+      "shipping": {
+        "header": "Forsendelse"
+      },
+      "disable": {
+        "confirmation": "Er du sikker på, at du vil deaktivere \"{{name}}\"? Dette vil slette alle tilknyttede servicezoner og forsendelsesmuligheder og kan ikke fortrydes.",
+        "pickup": "Afhentning blev deaktiveret.",
+        "shipping": "Forsendelse blev deaktiveret."
+      },
+      "enable": {
+        "pickup": "Afhentning blev aktiveret.",
+        "shipping": "Forsendelse blev aktiveret."
+      }
+    },
+    "sidebar": {
+      "header": "Forsendelseskonfiguration",
+      "shippingProfiles": {
+        "label": "Forsendelsesprofiler",
+        "description": "Gruppér produkter efter forsendelseskrav"
+      },
+      "shippingOptionTypes": {
+        "label": "Forsendelsesmuligheder typer",
+        "description": "Gruppér forsendelsesmuligheder efter typer"
+      }
+    },
+    "salesChannels": {
+      "header": "Salgskanaler",
+      "hint": "Administrer de salgskanaler, der er forbundet til denne lokation.",
+      "label": "Tilknyttede salgskanaler",
+      "connectedTo": "Forbundet til {{count}} af {{total}} salgskanaler",
+      "noChannels": "Placeringen er ikke forbundet med nogen salgskanaler.",
+      "action": "Forbind salgskanaler",
+      "successToast": "Salgskanalerne blev opdateret."
+    },
+    "pickupOptions": {
+      "edit": {
+        "header": "Rediger afhentningsmulighed"
+      }
+    },
+    "shippingOptions": {
+      "create": {
+        "shipping": {
+          "header": "Opret forsendelsesmulighed for {{zone}}",
+          "hint": "Opret en ny forsendelsesmulighed for at definere, hvordan produkter sendes fra denne placering.",
+          "label": "Forsendelsesmuligheder",
+          "successToast": "Forsendelsesmulighed {{name}} blev oprettet."
+        },
+        "pickup": {
+          "header": "Opret afhentningsmulighed for {{zone}}",
+          "hint": "Opret en ny afhentningsmulighed for at definere, hvordan produkter afhentes fra dette sted.",
+          "label": "Afhentningsmuligheder",
+          "successToast": "Afhentningsmulighed {{name}} blev oprettet."
+        },
+        "returns": {
+          "header": "Opret en returmulighed for {{zone}}",
+          "hint": "Opret en ny returmulighed for at definere, hvordan produkter returneres til dette sted.",
+          "label": "Returmuligheder",
+          "successToast": "Returmulighed {{name}} blev oprettet."
+        },
+        "tabs": {
+          "details": "Detaljer",
+          "prices": "Priser"
+        },
+        "action": "Opret mulighed"
+      },
+      "delete": {
+        "confirmation": "Du er ved at slette forsendelsesmuligheden \"{{name}}\". Denne handling kan ikke fortrydes.",
+        "successToast": "Forsendelsesmulighed {{name}} blev slettet."
+      },
+      "edit": {
+        "header": "Rediger forsendelsesmulighed",
+        "action": "Rediger mulighed",
+        "successToast": "Forsendelsesmulighed {{name}} blev opdateret."
+      },
+      "pricing": {
+        "action": "Rediger priser"
+      },
+      "conditionalPrices": {
+        "header": "Betingede priser for {{name}}",
+        "description": "Administrer de betingede priser for denne forsendelsesmulighed baseret på det samlede antal varer i kurven.",
+        "attributes": {
+          "cartItemTotal": "Vare i kurv i alt"
+        },
+        "summaries": {
+          "range": "Hvis <0>{{attribute}}</0> er mellem <1>{{gte}}</1> og <2>{{lte}}</2>",
+          "greaterThan": "Hvis <0>{{attribute}}</0> ≥ <1>{{gte}}</1>",
+          "lessThan": "Hvis <0>{{attribute}}</0> ≤ <1>{{lte}}</1>"
+        },
+        "actions": {
+          "addPrice": "Tilføj pris",
+          "manageConditionalPrices": "Administrer betingede priser"
+        },
+        "rules": {
+          "amount": "Pris for forsendelsesoption",
+          "gte": "Minimum vognvare i alt",
+          "lte": "Maksimalt antal varer i kurven"
+        },
+        "customRules": {
+          "label": "Brugerdefinerede regler",
+          "tooltip": "Denne betingede pris har regler, der ikke kan administreres i dashboardet.",
+          "eq": "Samlet antal varer i kurven skal svare til",
+          "gt": "Samlet antal varer i kurven skal være større end",
+          "lt": "Samlet antal varer i kurven skal være mindre end"
+        },
+        "errors": {
+          "amountRequired": "Pris for forsendelsesmulighed er påkrævet",
+          "minOrMaxRequired": "Der skal angives mindst én af minimum eller maksimum vare i kurven",
+          "minGreaterThanMax": "Minimum antal varer i kurven skal være mindre end eller lig med det maksimale antal varer i kurv",
+          "duplicateAmount": "Prisen for forsendelsesmulighed skal være unik for hver betingelse",
+          "overlappingConditions": "Betingelserne skal være unikke på tværs af alle prisregler"
+        }
+      },
+      "fields": {
+        "count": {
+          "shipping_one": "{{count}} forsendelsesmulighed",
+          "shipping_other": "{{count}} forsendelsesmuligheder",
+          "pickup_one": "{{count}} afhentningsmulighed",
+          "pickup_other": "{{count}} afhentningsmuligheder",
+          "returns_one": "{{count}} returmulighed",
+          "returns_other": "{{count}} returmuligheder"
+        },
+        "priceType": {
+          "label": "Pristype",
+          "options": {
+            "fixed": {
+              "label": "Fast",
+              "hint": "Forsendelsesmulighedens pris er fast og ændres ikke baseret på ordrens indhold."
+            },
+            "calculated": {
+              "label": "Beregnet",
+              "hint": "Forsendelsesmulighedens pris beregnes af opfyldelsesudbyderen under kassen."
+            }
+          }
+        },
+        "enableInStore": {
+          "label": "Aktiver i butikken",
+          "hint": "Om kunder kan bruge denne mulighed under kassen."
+        },
+        "provider": "Opfyldelsesudbyder",
+        "profile": "Forsendelsesprofil",
+        "type": "Type forsendelsesmulighed",
+        "fulfillmentOption": "Opfyldelsesmulighed"
+      }
+    },
+    "serviceZones": {
+      "create": {
+        "headerPickup": "Opret servicezone til afhentning fra {{location}}",
+        "headerShipping": "Opret servicezone til forsendelse fra {{location}}",
+        "action": "Opret servicezone",
+        "successToast": "Servicezone {{name}} blev oprettet."
+      },
+      "edit": {
+        "header": "Rediger servicezone",
+        "successToast": "Servicezone {{name}} blev opdateret."
+      },
+      "delete": {
+        "confirmation": "Du er ved at slette servicezonen \"{{name}}\". Denne handling kan ikke fortrydes.",
+        "successToast": "Servicezone {{name}} blev slettet."
+      },
+      "manageAreas": {
+        "header": "Administrer områder for {{name}}",
+        "action": "Administrer områder",
+        "label": "Områder",
+        "hint": "Vælg de geografiske områder, som servicezonen dækker.",
+        "successToast": "Områder for {{name}} blev opdateret."
+      },
+      "fields": {
+        "noRecords": "Der er ingen servicezoner at tilføje forsendelsesmuligheder til.",
+        "tip": "En servicezone er en samling af geografiske zoner eller områder. Det bruges til at begrænse tilgængelige forsendelsesmuligheder til et defineret sæt af lokationer."
+      }
+    }
+  },
+  "shippingProfile": {
+    "domain": "Forsendelsesprofiler",
+    "subtitle": "Gruppér produkter med lignende forsendelseskrav i profiler.",
+    "create": {
+      "header": "Opret forsendelsesprofil",
+      "hint": "Opret en ny forsendelsesprofil for at gruppere produkter med lignende forsendelseskrav.",
+      "successToast": "Forsendelsesprofil {{name}} blev oprettet."
+    },
+    "delete": {
+      "title": "Slet forsendelsesprofil",
+      "description": "Du er ved at slette forsendelsesprofilen {{name}}. Denne handling kan ikke fortrydes.",
+      "successToast": "Forsendelsesprofilen {{name}} blev slettet."
+    },
+    "tooltip": {
+      "type": "Indtast forsendelsesprofiltype, for eksempel: Tung, Overdimensioneret, Kun fragt osv."
+    }
+  },
+  "taxRegions": {
+    "domain": "Skatteregioner",
+    "list": {
+      "hint": "Administrer, hvad du opkræver dine kunder, når de handler fra forskellige lande og regioner."
+    },
+    "delete": {
+      "confirmation": "Du er ved at slette en skatteregion. Denne handling kan ikke fortrydes.",
+      "successToast": "Skatteregionen blev slettet."
+    },
+    "create": {
+      "header": "Opret skatteregion",
+      "hint": "Opret en ny skatteregion for at definere skattesatser for et bestemt land.",
+      "errors": {
+        "missingProvider": "Udbyder er påkrævet ved oprettelse af en skatteregion.",
+        "missingCountry": "Land er påkrævet, når du opretter en skatteregion."
+      },
+      "successToast": "Skatteregionen blev oprettet."
+    },
+    "edit": {
+      "header": "Rediger skatteregion",
+      "hint": "Rediger oplysningerne om skatteområdet.",
+      "successToast": "Skatteregionen blev opdateret."
+    },
+    "province": {
+      "header": "provinser",
+      "create": {
+        "header": "Opret provinsskatteregion",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for en bestemt provins."
+      }
+    },
+    "provider": {
+      "header": "Skatteudbyder"
+    },
+    "state": {
+      "header": "stater",
+      "create": {
+        "header": "Opret statsskatteregion",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for en bestemt stat."
+      }
+    },
+    "stateOrTerritory": {
+      "header": "stater eller territorier",
+      "create": {
+        "header": "Opret State/Territory skatteregion",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for en specifik stat/territory."
+      }
+    },
+    "county": {
+      "header": "Amter",
+      "create": {
+        "header": "Opret amtsskatteregion",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for et bestemt amt."
+      }
+    },
+    "region": {
+      "header": "Regioner",
+      "create": {
+        "header": "Opret Region Skatteregion",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for en bestemt region."
+      }
+    },
+    "department": {
+      "header": "Afdelinger",
+      "create": {
+        "header": "Opret afdelingsskatteregion",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for en bestemt afdeling."
+      }
+    },
+    "territory": {
+      "header": "Territorier",
+      "create": {
+        "header": "Opret territoriumskatteregion",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for et specifikt område."
+      }
+    },
+    "prefecture": {
+      "header": "Præfekturer",
+      "create": {
+        "header": "Opret præfekturskatteregion",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for et specifikt præfektur."
+      }
+    },
+    "district": {
+      "header": "Distrikter",
+      "create": {
+        "header": "Opret distriktsskatteregion",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for et bestemt distrikt."
+      }
+    },
+    "governorate": {
+      "header": "Governorates",
+      "create": {
+        "header": "Opret Governorate Tax Region",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for et specifikt guvernement."
+      }
+    },
+    "canton": {
+      "header": "Kantoner",
+      "create": {
+        "header": "Opret kantonskatteregion",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for en bestemt kanton."
+      }
+    },
+    "emirate": {
+      "header": "Emirater",
+      "create": {
+        "header": "Opret Emirate Tax Region",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for et specifikt emirat."
+      }
+    },
+    "sublevel": {
+      "header": "Underniveauer",
+      "create": {
+        "header": "Opret skatteregion på underniveau",
+        "hint": "Opret en ny skatteregion for at definere skattesatser for et specifikt underniveau."
+      }
+    },
+    "taxOverrides": {
+      "header": "Tilsidesætter",
+      "create": {
+        "header": "Opret tilsidesættelse",
+        "hint": "Opret en afgiftssats, der tilsidesætter standard afgiftssatserne for udvalgte forhold."
+      },
+      "edit": {
+        "header": "Rediger Tilsidesæt",
+        "hint": "Rediger den afgiftssats, der tilsidesætter standardafgiftssatserne for udvalgte forhold."
+      }
+    },
+    "taxRates": {
+      "create": {
+        "header": "Opret skattesats",
+        "hint": "Opret en ny afgiftssats for at definere afgiftssatsen for en region.",
+        "successToast": "Skattesatsen blev oprettet."
+      },
+      "edit": {
+        "header": "Rediger momssats",
+        "hint": "Rediger afgiftssatsen for at definere afgiftssatsen for en region.",
+        "successToast": "Skattesatsen blev opdateret."
+      },
+      "delete": {
+        "confirmation": "Du er ved at slette skattesatsen \"{{name}}\". Denne handling kan ikke fortrydes.",
+        "successToast": "Skattesatsen blev slettet."
+      }
+    },
+    "fields": {
+      "isCombinable": {
+        "label": "Kan kombineres",
+        "hint": "Om denne skattesats kan kombineres med standardsatsen fra skatteregionen.",
+        "true": "Kan kombineres",
+        "false": "Ikke kombinerbar"
+      },
+      "defaultTaxRate": {
+        "label": "Standardskattesats",
+        "tooltip": "Standardskattesatsen for denne region. Et eksempel er standardmomssatsen for et land eller en region.",
+        "action": "Opret standard skattesats"
+      },
+      "taxRate": "Skattesats",
+      "taxCode": "Skattekode",
+      "taxProvider": "Skatteudbyder",
+      "targets": {
+        "label": "Mål",
+        "hint": "Vælg de mål, som denne skattesats skal gælde for.",
+        "options": {
+          "product": "Produkter",
+          "productCollection": "Produktsamlinger",
+          "productTag": "Produkt tags",
+          "productType": "Produkttyper",
+          "customerGroup": "Kundegrupper",
+          "shippingOption": "Forsendelsesmuligheder"
+        },
+        "operators": {
+          "in": "ind",
+          "on": "på",
+          "and": "og"
+        },
+        "placeholders": {
+          "product": "Søg efter produkter",
+          "productCollection": "Søg efter produktkollektioner",
+          "productTag": "Søg efter produktmærker",
+          "productType": "Søg efter produkttyper",
+          "customerGroup": "Søg efter kundegrupper",
+          "shippingOption": "Søg efter forsendelsesmuligheder"
+        },
+        "tags": {
+          "product": "Produkt",
+          "productCollection": "Produktsamling",
+          "productTag": "Produkt tag",
+          "productType": "Produkttype",
+          "customerGroup": "Kundegruppe",
+          "shippingOption": "Mulighed for forsendelse"
+        },
+        "modal": {
+          "header": "Tilføj mål"
+        },
+        "values_one": "{{count}} værdi",
+        "values_other": "{{count}} værdier",
+        "numberOfTargets_one": "{{count}} mål",
+        "numberOfTargets_other": "{{count}} mål",
+        "additionalValues_one": "og {{count}} mere værdi",
+        "additionalValues_other": "og {{count}} flere værdier",
+        "action": "Tilføj mål"
+      },
+      "sublevels": {
+        "labels": {
+          "province": "provins",
+          "state": "stat",
+          "region": "Region",
+          "stateOrTerritory": "State/Territory",
+          "department": "afdeling",
+          "county": "Amt",
+          "territory": "Territorium",
+          "prefecture": "Præfektur",
+          "district": "Distrikt",
+          "governorate": "Governorate",
+          "emirate": "Emirat",
+          "canton": "Kanton",
+          "sublevel": "Kode på underniveau"
+        },
+        "placeholders": {
+          "province": "Vælg provins",
+          "state": "Vælg tilstand",
+          "region": "Vælg region",
+          "stateOrTerritory": "Vælg tilstand/territory",
+          "department": "Vælg afdeling",
+          "county": "Vælg amt",
+          "territory": "Vælg territorium",
+          "prefecture": "Vælg præfektur",
+          "district": "Vælg distrikt",
+          "governorate": "Vælg guvernement",
+          "emirate": "Vælg emirat",
+          "canton": "Vælg kanton"
+        },
+        "tooltips": {
+          "sublevel": "Indtast ISO 3166-2-koden for skatteområdet på underniveau.",
+          "notPartOfCountry": "{{province}} ser ikke ud til at være en del af {{country}}. Dobbelttjek venligst om dette er korrekt."
+        },
+        "alert": {
+          "header": "Regioner på underniveau er deaktiveret for denne skatteregion",
+          "description": "Regioner på underniveau er som standard deaktiveret for denne region. Du kan aktivere dem til at oprette regioner på underniveau som provinser, stater eller territorier.",
+          "action": "Aktiver regioner på underniveau"
+        }
+      },
+      "noDefaultRate": {
+        "label": "Ingen standardsats",
+        "tooltip": "Denne skatteregion har ikke en standardskattesats. Hvis der er en standardsats, såsom et lands moms, bedes du tilføje den til denne region."
+      }
+    }
+  },
+  "promotions": {
+    "domain": "Kampagner",
+    "sections": {
+      "details": "Kampagnedetaljer"
+    },
+    "tabs": {
+      "template": "Type",
+      "details": "Detaljer",
+      "campaign": "Kampagne"
+    },
+    "fields": {
+      "type": "Type",
+      "value_type": "Værditype",
+      "value": "Værdi",
+      "campaign": "Kampagne",
+      "method": "Metode",
+      "allocation": "Tildeling",
+      "allocationTooltip": "Hver håndhæver mængdegrænsen pr. vare, mens Once håndhæver mængdegrænsen på tværs af hele indkøbskurven",
+      "addCondition": "Tilføj betingelse",
+      "clearAll": "Ryd alle",
+      "taxInclusive": "Skat inklusive",
+      "usageLimit": "Brugsgrænse",
+      "usage": "Brug",
+      "amount": {
+        "tooltip": "Vælg valutakoden for at aktivere indstilling af beløbet"
+      },
+      "conditions": {
+        "rules": {
+          "title": "Hvem kan bruge denne kode?",
+          "description": "Hvilken kunde må bruge kampagnekoden? Kampagnekode kan bruges af alle kunder, hvis den ikke berøres."
+        },
+        "target-rules": {
+          "order": {
+            "title": "Hvilke varer vil kampagnen blive anvendt på?",
+            "description": "Kampagnen vil blive anvendt på varer, der matcher følgende betingelser."
+          },
+          "shipping_methods": {
+            "title": "Hvilke forsendelsesmetoder vil kampagnen blive anvendt på?",
+            "description": "Kampagnen vil blive anvendt på forsendelsesmetoder, der matcher følgende betingelser."
+          },
+          "items": {
+            "title": "Hvilke varer vil kampagnen blive anvendt på?",
+            "description": "Kampagnen vil blive anvendt på varer, der matcher følgende betingelser."
+          }
+        },
+        "buy-rules": {
+          "title": "Hvad skal der være i kurven for at låse op for kampagnen?",
+          "description": "Hvis disse betingelser stemmer overens, aktiverer vi kampagnen på målvarerne."
+        }
+      }
+    },
+    "tooltips": {
+      "campaignType": "Valutakoden skal vælges i kampagnen for at angive et forbrugsbudget."
+    },
+    "errors": {
+      "requiredField": "Påkrævet felt",
+      "promotionTabError": "Ret fejl på fanen Promotion, før du fortsætter"
+    },
+    "toasts": {
+      "promotionCreateSuccess": "Kampagnen ({{code}}) blev oprettet."
+    },
+    "create": {},
+    "edit": {
+      "title": "Rediger kampagneoplysninger",
+      "rules": {
+        "title": "Rediger brugsbetingelser"
+      },
+      "target-rules": {
+        "title": "Rediger varebetingelser"
+      },
+      "buy-rules": {
+        "title": "Rediger købsregler"
+      }
+    },
+    "campaign": {
+      "header": "Kampagne",
+      "edit": {
+        "header": "Rediger kampagne",
+        "successToast": "Kampagnen for kampagnen blev opdateret."
+      },
+      "actions": {
+        "goToCampaign": "Gå til kampagne"
+      }
+    },
+    "campaign_currency": {
+      "tooltip": "Dette er kampagnens valuta. Skift det fra fanen Detaljer."
+    },
+    "form": {
+      "required": "Påkrævet",
+      "and": "AND",
+      "selectAttribute": "Vælg Attribut",
+      "campaign": {
+        "existing": {
+          "title": "Eksisterende kampagne",
+          "description": "Føj kampagne til en eksisterende kampagne.",
+          "placeholder": {
+            "title": "Ingen eksisterende kampagner",
+            "desc": "Du kan oprette en for at spore flere kampagner og sætte budgetgrænser."
+          }
+        },
+        "new": {
+          "title": "Ny kampagne",
+          "description": "Opret en ny kampagne for denne kampagne."
+        },
+        "none": {
+          "title": "Uden kampagne",
+          "description": "Fortsæt uden at forbinde promovering med kampagne"
+        }
+      },
+      "taxInclusive": {
+        "title": "Inkluderer promovering skatter?",
+        "description": "Aktiver dette felt for at anvende kampagnen efter skat"
+      },
+      "status": {
+        "label": "Status",
+        "draft": {
+          "title": "Udkast",
+          "description": "Kunder vil ikke kunne bruge koden endnu"
+        },
+        "active": {
+          "title": "Aktiv",
+          "description": "Kunder vil kunne bruge koden"
+        },
+        "inactive": {
+          "title": "Inaktiv",
+          "description": "Kunder vil ikke længere kunne bruge koden"
+        }
+      },
+      "method": {
+        "label": "Metode",
+        "code": {
+          "title": "Kampagnekode",
+          "description": "Kunder skal indtaste denne kode ved kassen"
+        },
+        "automatic": {
+          "title": "Automatisk",
+          "description": "Kunder vil se denne kampagne ved kassen"
+        }
+      },
+      "max_quantity": {
+        "title": "Maksimal mængde",
+        "description": "Maksimalt antal varer denne kampagne gælder for."
+      },
+      "type": {
+        "standard": {
+          "title": "Standard",
+          "description": "En standard kampagne"
+        },
+        "buyget": {
+          "title": "Køb Get",
+          "description": "Køb X få Y-kampagne"
+        }
+      },
+      "allocation": {
+        "each": {
+          "title": "hver",
+          "description": "Anvender værdi på hver vare"
+        },
+        "across": {
+          "title": "På tværs",
+          "description": "Anvender værdi på tværs af varer"
+        },
+        "once": {
+          "title": "En gang",
+          "description": "Gælder værdi for et begrænset antal varer"
+        }
+      },
+      "code": {
+        "title": "Kode",
+        "description": "Den kode dine kunder indtaster ved kassen."
+      },
+      "value": {
+        "title": "Promotion værdi",
+        "invalid": "Ugyldig kampagneværdi"
+      },
+      "value_type": {
+        "fixed": {
+          "title": "Fast beløb",
+          "description": "Det beløb, der skal tilbagediskonteres. f.eks. 100"
+        },
+        "percentage": {
+          "title": "Procent",
+          "description": "Den procentdel, der skal tilbagebetales beløbet. f.eks. 8 %"
+        }
+      },
+      "limit": {
+        "title": "Brugsgrænse",
+        "description": "Maksimalt antal gange denne kampagne kan bruges på tværs af alle ordrer. Lad være tom for ubegrænset brug."
+      }
+    },
+    "templates": {
+      "amount_off_products": {
+        "title": "Rabatbeløb på produkter",
+        "description": "Rabat på specifikke produkter eller samling af produkter"
+      },
+      "amount_off_order": {
+        "title": "Beløb fra ordre",
+        "description": "Rabatter det samlede ordrebeløb"
+      },
+      "percentage_off_product": {
+        "title": "Procent rabat på produktet",
+        "description": "Rabatter en procentdel på udvalgte produkter"
+      },
+      "percentage_off_order": {
+        "title": "Procent rabat på ordre",
+        "description": "Rabatter en procentdel af det samlede ordrebeløb"
+      },
+      "buy_get": {
+        "title": "Køb X Få Y",
+        "description": "Køb X produkt(er), få Y produkt(er)"
+      },
+      "shipping_discount": {
+        "title": "Gratis forsendelse",
+        "description": "Gælder 100% rabat på forsendelsesgebyrer"
+      }
+    },
+    "deleteWarning": "Du er ved at slette kampagnen {{code}}. Denne handling kan ikke fortrydes.",
+    "createPromotionTitle": "Opret kampagne",
+    "type": "Kampagnetype",
+    "conditions": {
+      "add": "Tilføj betingelse",
+      "list": {
+        "noRecordsMessage": "Tilføj en betingelse for at begrænse, hvilke varer kampagnen gælder for."
+      }
+    }
+  },
+  "campaigns": {
+    "domain": "Kampagner",
+    "details": "Kampagnedetaljer",
+    "status": {
+      "active": "Aktiv",
+      "expired": "Udløbet",
+      "scheduled": "Planlagt"
+    },
+    "delete": {
+      "title": "Er du sikker?",
+      "description": "Du er ved at slette kampagnen '{{name}}'. Denne handling kan ikke fortrydes.",
+      "successToast": "Kampagnen '{{name}}' blev slettet."
+    },
+    "edit": {
+      "header": "Rediger kampagne",
+      "description": "Rediger detaljerne for kampagnen.",
+      "successToast": "Kampagnen '{{name}}' blev opdateret."
+    },
+    "configuration": {
+      "header": "Konfiguration",
+      "edit": {
+        "header": "Rediger kampagnekonfiguration",
+        "description": "Rediger kampagnens konfiguration.",
+        "successToast": "Kampagnekonfigurationen blev opdateret."
+      }
+    },
+    "create": {
+      "title": "Opret kampagne",
+      "description": "Opret en salgsfremmende kampagne.",
+      "hint": "Opret en salgsfremmende kampagne.",
+      "header": "Opret kampagne",
+      "successToast": "Kampagnen '{{name}}' blev oprettet."
+    },
+    "fields": {
+      "name": "Navn",
+      "identifier": "Identifikator",
+      "start_date": "Startdato",
+      "end_date": "Slutdato",
+      "total_spend": "Budget brugt",
+      "total_used": "Budget brugt",
+      "totalUsedByAttribute": "I alt brugt",
+      "budget_limit": "Budgetgrænse",
+      "campaign_id": {
+        "hint": "Deaktiverede kampagner har budget i en anden valuta end kampagnen."
+      }
+    },
+    "budget": {
+      "attribute": {
+        "customer_id": "kunde",
+        "customer_email": "e-mail"
+      },
+      "create": {
+        "hint": "Opret et budget for kampagnen.",
+        "header": "Kampagnebudget"
+      },
+      "details": "Kampagnebudget",
+      "fields": {
+        "type": "Type",
+        "currency": "Valuta",
+        "limit": "Grænse",
+        "used": "Brugt",
+        "budgetAttribute": "Begræns forbrug pr",
+        "budgetAttributeTooltip": "Definer, hvor mange gange kampagnen kan bruges af hver kunde eller e-mail.",
+        "totalUsedByAttribute": "Budgetgrænse pr.: {{attribute}}",
+        "totalUsedByAttributeCustomerId": "Budgetgrænse pr. kunde",
+        "totalUsedByAttributeEmail": "Budgetgrænse pr. e-mail"
+      },
+      "type": {
+        "spend": {
+          "title": "Tilbringe",
+          "description": "Indstil en grænse for det samlede nedsatte beløb for alle kampagnebrug."
+        },
+        "usage": {
+          "title": "Brug",
+          "description": "Sæt en grænse for, hvor mange gange kampagnen kan bruges."
+        },
+        "useByAttribute": {
+          "title": "Brug efter attribut (kunde-id, e-mail osv.)",
+          "titleCustomerId": "Brug pr. kunde",
+          "titleEmail": "Brug pr. e-mail",
+          "description": "Indstil en grænse for, hvor mange gange kampagnen kan bruges af en specifik attributværdi."
+        }
+      },
+      "edit": {
+        "header": "Rediger kampagnebudget"
+      }
+    },
+    "promotions": {
+      "remove": {
+        "title": "Fjern kampagnen fra kampagnen",
+        "description": "Du er ved at fjerne {{count}}-kampagner fra kampagnen. Denne handling kan ikke fortrydes."
+      },
+      "alreadyAdded": "Denne kampagne er allerede blevet tilføjet til kampagnen.",
+      "alreadyAddedDiffCampaign": "Denne kampagne er allerede blevet føjet til en anden kampagne ({{name}}).",
+      "currencyMismatch": "Kampagnens og kampagnens valuta stemmer ikke overens",
+      "toast": {
+        "success": "{{count}}-kampagne(r) blev føjet til kampagnen"
+      },
+      "add": {
+        "list": {
+          "noRecordsMessage": "Opret en kampagne først."
+        }
+      },
+      "list": {
+        "noRecordsMessage": "Der er ingen kampagner i kampagnen."
+      }
+    },
+    "deleteCampaignWarning": "Du er ved at slette kampagnen {{name}}. Denne handling kan ikke fortrydes.",
+    "totalSpend": "<0>{{amount}}</0> <1>{{currency}}</1>"
+  },
+  "priceLists": {
+    "domain": "Prislister",
+    "subtitle": "Opret udsalg eller tilsidesæt priser for specifikke forhold.",
+    "delete": {
+      "confirmation": "Du er ved at slette prislisten \"{{title}}\". Denne handling kan ikke fortrydes.",
+      "successToast": "Prislisten \"{{title}}\" blev slettet."
+    },
+    "create": {
+      "header": "Opret prisliste",
+      "subheader": "Opret en ny prisliste for at administrere priserne på dine produkter.",
+      "tabs": {
+        "details": "Detaljer",
+        "products": "Produkter",
+        "prices": "Priser"
+      },
+      "successToast": "Prisliste {{title}} blev oprettet.",
+      "products": {
+        "list": {
+          "noRecordsMessage": "Opret først et produkt."
+        }
+      }
+    },
+    "edit": {
+      "header": "Rediger prisliste",
+      "successToast": "Prisliste {{title}} blev opdateret."
+    },
+    "configuration": {
+      "header": "Konfiguration",
+      "edit": {
+        "header": "Rediger prislistekonfiguration",
+        "description": "Rediger konfigurationen af ​​prislisten.",
+        "successToast": "Prislistekonfigurationen blev opdateret."
+      }
+    },
+    "products": {
+      "header": "Produkter",
+      "actions": {
+        "addProducts": "Tilføj produkter",
+        "editPrices": "Rediger priser"
+      },
+      "delete": {
+        "confirmation_one": "Du er ved at slette priserne for {{count}}-produktet i prislisten. Denne handling kan ikke fortrydes.",
+        "confirmation_other": "Du er ved at slette priserne for {{count}} produkter i prislisten. Denne handling kan ikke fortrydes.",
+        "successToast_one": "Priserne for {{count}}-produktet er blevet slettet.",
+        "successToast_other": "Priser for {{count}}-produkter er blevet slettet."
+      },
+      "add": {
+        "successToast": "Priserne blev tilføjet til prislisten."
+      },
+      "edit": {
+        "successToast": "Priserne blev opdateret."
+      }
+    },
+    "fields": {
+      "priceOverrides": {
+        "label": "Pris tilsidesætter",
+        "header": "Prisoverskridelser"
+      },
+      "status": {
+        "label": "Status",
+        "options": {
+          "active": "Aktiv",
+          "draft": "Udkast",
+          "expired": "Udløbet",
+          "scheduled": "Planlagt"
+        }
+      },
+      "type": {
+        "label": "Type",
+        "hint": "Vælg den type prisliste, du vil oprette.",
+        "options": {
+          "sale": {
+            "label": "Udsalg",
+            "description": "Salgspriser er midlertidige prisændringer for produkter."
+          },
+          "override": {
+            "label": "Tilsidesæt",
+            "description": "Tilsidesættelser bruges normalt til at oprette kundespecifikke priser."
+          }
+        }
+      },
+      "startsAt": {
+        "label": "Har prislisten en startdato?",
+        "hint": "Planlæg, at prislisten skal aktiveres i fremtiden."
+      },
+      "endsAt": {
+        "label": "Har prislisten en udløbsdato?",
+        "hint": "Planlæg prislisten til at deaktivere i fremtiden."
+      },
+      "customerAvailability": {
+        "header": "Vælg kundegrupper",
+        "label": "Kundetilgængelighed",
+        "hint": "Vælg hvilke kundegrupper prislisten skal gælde for.",
+        "placeholder": "Søg efter kundegrupper",
+        "attribute": "Kundegrupper"
+      }
+    }
+  },
+  "profile": {
+    "domain": "Profil",
+    "manageYourProfileDetails": "Administrer dine profiloplysninger.",
+    "fields": {
+      "languageLabel": "Sprog",
+      "usageInsightsLabel": "Brugsindsigt"
+    },
+    "edit": {
+      "header": "Rediger profil",
+      "languageHint": "Det sprog, du vil bruge i admin-dashboardet. Dette ændrer ikke sproget i din butik.",
+      "languagePlaceholder": "Vælg sprog",
+      "usageInsightsHint": "Del brugsindsigt og hjælp os med at forbedre Medusa. Du kan læse mere om, hvad vi indsamler, og hvordan vi bruger det, i vores <0>-dokumentation</0>."
+    },
+    "toast": {
+      "edit": "Profilændringer gemt"
+    }
+  },
+  "users": {
+    "domain": "Brugere",
+    "editUser": "Rediger bruger",
+    "inviteUser": "Inviter bruger",
+    "inviteUserHint": "Inviter en ny bruger til din butik.",
+    "sendInvite": "Send invitation",
+    "pendingInvites": "Afventende invitationer",
+    "deleteInviteWarning": "Du er ved at slette invitationen til {{email}}. Denne handling kan ikke fortrydes.",
+    "resendInvite": "Send invitationen igen",
+    "copyInviteLink": "Kopiér invitationslinket",
+    "expiredOnDate": "Udløb den {{date}}",
+    "validFromUntil": "Gyldig fra <0>{{from}}</0> - <1>{{until}}</1>",
+    "acceptedOnDate": "Accepteret på {{date}}",
+    "inviteStatus": {
+      "accepted": "Accepteret",
+      "pending": "Afventer",
+      "expired": "Udløbet"
+    },
+    "roles": {
+      "admin": "Admin",
+      "developer": "Udvikler",
+      "member": "Medlem"
+    },
+    "list": {
+      "empty": {
+        "heading": "Ingen brugere fundet",
+        "description": "Når en bruger er blevet inviteret, vises de her."
+      },
+      "filtered": {
+        "heading": "Ingen resultater",
+        "description": "Ingen brugere matcher de aktuelle filterkriterier."
+      }
+    },
+    "deleteUserWarning": "Du er ved at slette brugeren {{name}}. Denne handling kan ikke fortrydes.",
+    "deleteUserSuccess": "Bruger {{name}} blev slettet",
+    "invite": "Inviter"
+  },
+  "translations": {
+    "domain": "Oversættelser",
+    "settings": {
+      "header": "Administrer oversættelige enheder",
+      "successToast": "Indstillingerne blev opdateret"
+    },
+    "actions": {
+      "manage": "Administrer oversættelser",
+      "manageEntities": "Administrer enheder",
+      "manageLocales": "Administrer lokaliteter"
+    },
+    "subtitle": "Administrer oversættelser af dine data i Medusa",
+    "list": {
+      "metrics": "{{translated}} af {{total}} oversættelser"
+    },
+    "edit": {
+      "successToast": "Oversættelser blev opdateret",
+      "unsavedChanges": {
+        "title": "Ikke-gemte oversættelser",
+        "description": "Mist ikke dit arbejde. Du har ændringer, der ikke er blevet gemt endnu"
+      }
+    },
+    "bulk": {
+      "header": "Oversættelser Bulk Editor",
+      "mainColumn": "Lokalitet"
+    },
+    "activeLocales": {
+      "heading": "Sprog",
+      "subtitle": "Aktiverede oversættelser",
+      "noLocalesTip": "Konfigurer mindst ét sprog for at begynde at oversætte dine data",
+      "noLocalesTipConfigureAction": "Konfigurer"
+    },
+    "completion": {
+      "heading": "Oversatte felter",
+      "translated": "Oversat",
+      "toTranslate": "Mangler",
+      "footer": "Sprog"
+    }
+  },
+  "store": {
+    "domain": "Butik",
+    "manageYourStoresDetails": "Administrer din butiks detaljer",
+    "editStore": "Rediger butik",
+    "defaultCurrency": "Standardvaluta",
+    "defaultLocale": "Standardlokalitet",
+    "defaultRegion": "Standardområde",
+    "defaultSalesChannel": "Standard salgskanal",
+    "defaultLocation": "Standardplacering",
+    "swapLinkTemplate": "Skift link skabelon",
+    "paymentLinkTemplate": "Betalingslinkskabelon",
+    "inviteLinkTemplate": "Invitationslinkskabelon",
+    "locales": "Lokaliteter",
+    "currencies": "Valutaer",
+    "addCurrencies": "Tilføj valutaer",
+    "enableTaxInclusivePricing": "Aktiver priser inklusive skat",
+    "disableTaxInclusivePricing": "Deaktiver prissætning inklusive skat",
+    "removeCurrencyWarning_one": "Du er ved at fjerne {{count}} valuta fra din butik. Sørg for, at du har fjernet alle priser, der bruger valutaen, før du fortsætter.",
+    "removeCurrencyWarning_other": "Du er ved at fjerne {{count}}-valutaer fra din butik. Sørg for, at du har fjernet alle priser, der bruger valutaerne, før du fortsætter.",
+    "removeLocaleWarning_one": "Du er ved at fjerne {{count}}-lokaliteten fra din butik. Enhver oversættelse, der bruger denne lokalitet, vil blive fjernet.",
+    "removeLocaleWarning_other": "Du er ved at fjerne {{count}}-lokaliteter fra din butik. Enhver oversættelse, der bruger disse lokaliteter, vil blive fjernet.",
+    "currencyAlreadyAdded": "Valutaen er allerede blevet tilføjet til din butik.",
+    "localeAlreadyAdded": "Lokaliteten er allerede blevet tilføjet til din butik.",
+    "edit": {
+      "header": "Rediger butik"
+    },
+    "toast": {
+      "update": "Butik blev opdateret",
+      "currenciesUpdated": "Valutaer blev opdateret",
+      "localesUpdated": "Lokaliteter blev opdateret",
+      "currenciesRemoved": "Fjernet valutaer fra butikken",
+      "localesRemoved": "Lokaliteter blev fjernet fra butikken",
+      "updatedTaxInclusivitySuccessfully": "Prisen inklusive moms blev opdateret"
+    }
+  },
+  "regions": {
+    "domain": "Regioner",
+    "subtitle": "En region er et område, som du sælger produkter i. Det kan dække flere lande og har forskellige skattesatser, udbydere og valuta.",
+    "createRegion": "Opret region",
+    "createRegionHint": "Administrer skattesatser og udbydere for en række lande.",
+    "addCountries": "Tilføj lande",
+    "editRegion": "Rediger region",
+    "countriesHint": "Tilføj de lande, der er inkluderet i denne region.",
+    "deleteRegionWarning": "Du er ved at slette regionen {{name}}. Denne handling kan ikke fortrydes.",
+    "removeCountriesWarning_one": "Du er ved at fjerne {{count}} land fra regionen. Denne handling kan ikke fortrydes.",
+    "removeCountriesWarning_other": "Du er ved at fjerne {{count}}-lande fra regionen. Denne handling kan ikke fortrydes.",
+    "removeCountryWarning": "Du er ved at fjerne landet {{name}} fra regionen. Denne handling kan ikke fortrydes.",
+    "automaticTaxesHint": "Når det er aktiveret, vil skatter kun blive beregnet ved kassen baseret på forsendelsesadressen.",
+    "taxInclusiveHint": "Når det er aktiveret, vil priserne i regionen være inklusive skat.",
+    "providersHint": "Tilføj hvilke betalingsudbydere der er tilgængelige i denne region.",
+    "shippingOptions": "Forsendelsesmuligheder",
+    "deleteShippingOptionWarning": "Du er ved at slette forsendelsesmuligheden {{name}}. Denne handling kan ikke fortrydes.",
+    "return": "Retur",
+    "outbound": "Udgående",
+    "priceType": "Pris Type",
+    "flatRate": "Fast sats",
+    "calculated": "Beregnet",
+    "list": {
+      "noRecordsMessage": "Opret en region for de områder, du sælger i."
+    },
+    "toast": {
+      "delete": "Regionen blev slettet",
+      "edit": "Regionsredigering blev gemt",
+      "create": "Regionen blev oprettet",
+      "countries": "Regionslandene blev opdateret"
+    },
+    "shippingOption": {
+      "createShippingOption": "Opret forsendelsesmulighed",
+      "createShippingOptionHint": "Opret en ny forsendelsesmulighed for regionen.",
+      "editShippingOption": "Rediger forsendelsesmulighed",
+      "fulfillmentMethod": "Opfyldelsesmetode",
+      "type": {
+        "outbound": "Udgående",
+        "outboundHint": "Brug dette, hvis du opretter en forsendelsesmulighed for at sende produkter til kunden.",
+        "return": "Retur",
+        "returnHint": "Brug dette, hvis du opretter en forsendelsesmulighed, så kunden kan returnere produkter til dig."
+      },
+      "priceType": {
+        "label": "Pris Type",
+        "flatRate": "Fast sats",
+        "calculated": "Beregnet"
+      },
+      "availability": {
+        "adminOnly": "Kun admin",
+        "adminOnlyHint": "Når den er aktiveret, vil forsendelsesmuligheden kun være tilgængelig i admin-dashboardet og ikke i butiksfacaden."
+      },
+      "taxInclusiveHint": "Når den er aktiveret, vil forsendelsesmulighedens pris være inklusive moms.",
+      "requirements": {
+        "label": "Krav",
+        "hint": "Angiv kravene til forsendelsesmuligheden."
+      }
+    }
+  },
+  "taxes": {
+    "domain": "Skatteregioner",
+    "domainDescription": "Administrer din skatteregion",
+    "countries": {
+      "taxCountriesHint": "Skatteindstillinger gælder for de anførte lande."
+    },
+    "settings": {
+      "editTaxSettings": "Rediger skatteindstillinger",
+      "taxProviderLabel": "Skatteudbyder",
+      "systemTaxProviderLabel": "Systemskatteudbyder",
+      "calculateTaxesAutomaticallyLabel": "Beregn skatter automatisk",
+      "calculateTaxesAutomaticallyHint": "Når det er aktiveret, beregnes afgiftssatser automatisk og anvendes på indkøbsvogne. Når de er deaktiveret, skal skatter beregnes manuelt ved kassen. Manuelle afgifter anbefales til brug med tredjeparts skatteudbydere.",
+      "applyTaxesOnGiftCardsLabel": "Pålæg afgifter på gavekort",
+      "applyTaxesOnGiftCardsHint": "Når det er aktiveret, pålægges der skatter på gavekort ved kassen. I nogle lande kræver skattebestemmelser, at der pålægges afgifter på gavekort ved køb.",
+      "defaultTaxRateLabel": "Standardskattesats",
+      "defaultTaxCodeLabel": "Standard skattekode"
+    },
+    "defaultRate": {
+      "sectionTitle": "Standard afgiftssats"
+    },
+    "taxRate": {
+      "sectionTitle": "Skattesatser",
+      "createTaxRate": "Opret skattesats",
+      "createTaxRateHint": "Opret en ny skattesats for regionen.",
+      "deleteRateDescription": "Du er ved at slette skattesatsen {{name}}. Denne handling kan ikke fortrydes.",
+      "editRateAction": "Rediger rate",
+      "editOverridesAction": "Rediger tilsidesættelser",
+      "editOverridesTitle": "Rediger tilsidesættelser af skattesatser",
+      "editOverridesHint": "Angiv tilsidesættelserne for afgiftssatsen.",
+      "deleteTaxRateWarning": "Du er ved at slette skattesatsen {{name}}. Denne handling kan ikke fortrydes.",
+      "productOverridesLabel": "Produktet tilsidesætter",
+      "productOverridesHint": "Angiv produkttilsidesættelserne for afgiftssatsen.",
+      "addProductOverridesAction": "Tilføj produkttilsidesættelser",
+      "productTypeOverridesLabel": "Produkttype tilsidesætter",
+      "productTypeOverridesHint": "Angiv produkttypetilsidesættelsen for afgiftssatsen.",
+      "addProductTypeOverridesAction": "Tilføj produkttypetilsidesættelser",
+      "shippingOptionOverridesLabel": "Forsendelsesmulighed tilsidesætter",
+      "shippingOptionOverridesHint": "Angiv tilsidesættelsen af ​​forsendelsesmuligheden for afgiftssatsen.",
+      "addShippingOptionOverridesAction": "Tilføj tilsidesættelser af forsendelsesmuligheder",
+      "productOverridesHeader": "Produkter",
+      "productTypeOverridesHeader": "Produkttyper",
+      "shippingOptionOverridesHeader": "Forsendelsesmuligheder"
+    }
+  },
+  "locations": {
+    "domain": "Steder",
+    "editLocation": "Rediger placering",
+    "addSalesChannels": "Tilføj salgskanaler",
+    "noLocationsFound": "Ingen steder fundet",
+    "selectLocations": "Vælg lokationer, der lagerfører varen.",
+    "deleteLocationWarning": "Du er ved at slette placeringen {{name}}. Denne handling kan ikke fortrydes.",
+    "removeSalesChannelsWarning_one": "Du er ved at fjerne {{count}} salgskanal fra lokationen.",
+    "removeSalesChannelsWarning_other": "Du er ved at fjerne {{count}} salgskanaler fra lokationen.",
+    "toast": {
+      "create": "Placeringen er oprettet",
+      "update": "Placeringen blev opdateret",
+      "removeChannel": "Salgskanalen blev fjernet"
+    }
+  },
+  "reservations": {
+    "domain": "Forbehold",
+    "subtitle": "Administrer den reserverede mængde af lagervarer.",
+    "deleteWarning": "Du er ved at slette en reservation. Denne handling kan ikke fortrydes."
+  },
+  "salesChannels": {
+    "domain": "Salgskanaler",
+    "subtitle": "Administrer de online- og offlinekanaler, du sælger produkter på.",
+    "list": {
+      "empty": {
+        "heading": "Ingen salgskanaler fundet",
+        "description": "Når en salgskanal er oprettet, vises den her."
+      },
+      "filtered": {
+        "heading": "Ingen resultater",
+        "description": "Ingen salgskanaler matcher de aktuelle filterkriterier."
+      }
+    },
+    "createSalesChannel": "Opret salgskanal",
+    "createSalesChannelHint": "Opret en ny salgskanal at sælge dine produkter på.",
+    "enabledHint": "Angiv, om salgskanalen er aktiveret.",
+    "removeProductsWarning_one": "Du er ved at fjerne {{count}}-produktet fra {{sales_channel}}.",
+    "removeProductsWarning_other": "Du er ved at fjerne {{count}}-produkter fra {{sales_channel}}.",
+    "addProducts": "Tilføj produkter",
+    "editSalesChannel": "Rediger salgskanal",
+    "productAlreadyAdded": "Produktet er allerede blevet tilføjet til salgskanalen.",
+    "deleteSalesChannelWarning": "Du er ved at slette salgskanalen {{name}}. Denne handling kan ikke fortrydes.",
+    "toast": {
+      "create": "Salgskanal oprettet",
+      "update": "Salgskanalen blev opdateret",
+      "delete": "Salgskanalen blev slettet"
+    },
+    "tooltip": {
+      "cannotDeleteDefault": "Kan ikke slette standard salgskanal"
+    },
+    "products": {
+      "list": {
+        "noRecordsMessage": "Der er ingen produkter i salgskanalen."
+      },
+      "add": {
+        "list": {
+          "noRecordsMessage": "Opret først et produkt."
+        }
+      }
+    }
+  },
+  "apiKeyManagement": {
+    "domain": {
+      "publishable": "Publicerbare API-nøgler",
+      "secret": "Hemmelige API-nøgler"
+    },
+    "subtitle": {
+      "publishable": "Administrer API-nøgler, der bruges i butiksfacadet, for at begrænse omfanget af anmodninger til specifikke salgskanaler.",
+      "secret": "Administrer API-nøgler, der bruges til at godkende administratorbrugere i administratorapplikationer."
+    },
+    "status": {
+      "active": "Aktiv",
+      "revoked": "Tilbagekaldt"
+    },
+    "type": {
+      "publishable": "Publicerbar",
+      "secret": "Hemmelighed"
+    },
+    "create": {
+      "createPublishableHeader": "Opret publicerbar API-nøgle",
+      "createPublishableHint": "Opret en ny publicerbar API-nøgle for at begrænse omfanget af anmodninger til specifikke salgskanaler.",
+      "createSecretHeader": "Opret hemmelig API-nøgle",
+      "createSecretHint": "Opret en ny hemmelig API-nøgle for at få adgang til Medusa API som en godkendt administratorbruger.",
+      "secretKeyCreatedHeader": "Hemmelig nøgle oprettet",
+      "secretKeyCreatedHint": "Din nye hemmelige nøgle er blevet genereret. Kopier og gem det sikkert nu. Dette er den eneste gang, den vil blive vist.",
+      "copySecretTokenSuccess": "Den hemmelige nøgle blev kopieret til udklipsholderen.",
+      "copySecretTokenFailure": "Kunne ikke kopiere den hemmelige nøgle til udklipsholderen.",
+      "successToast": "API-nøgle blev oprettet."
+    },
+    "edit": {
+      "header": "Rediger API-nøgle",
+      "description": "Rediger API-nøglens titel.",
+      "successToast": "API-nøgle {{title}} blev opdateret."
+    },
+    "salesChannels": {
+      "title": "Tilføj salgskanaler",
+      "description": "Tilføj de salgskanaler, som API-nøglen skal begrænses til.",
+      "successToast_one": "Salgskanalen {{count}} blev tilføjet til API-nøglen.",
+      "successToast_other": "{{count}} salgskanaler blev tilføjet til API-nøglen.",
+      "alreadyAddedTooltip": "Salgskanalen er allerede blevet tilføjet til API-nøglen.",
+      "list": {
+        "noRecordsMessage": "Der er ingen salgskanaler i den publicerbare API-nøgles omfang."
+      }
+    },
+    "delete": {
+      "warning": "Du er ved at slette API-nøglen {{title}}. Denne handling kan ikke fortrydes.",
+      "successToast": "API-nøgle {{title}} blev slettet."
+    },
+    "revoke": {
+      "warning": "Du er ved at tilbagekalde API-nøglen {{title}}. Denne handling kan ikke fortrydes.",
+      "successToast": "API-nøgle {{title}} blev tilbagekaldt."
+    },
+    "addSalesChannels": {
+      "list": {
+        "noRecordsMessage": "Opret først en salgskanal."
+      }
+    },
+    "removeSalesChannel": {
+      "warning": "Du er ved at fjerne salgskanalen {{name}} fra API-nøglen. Denne handling kan ikke fortrydes.",
+      "warningBatch_one": "Du er ved at fjerne {{count}} salgskanal fra API-nøglen. Denne handling kan ikke fortrydes.",
+      "warningBatch_other": "Du er ved at fjerne {{count}} salgskanaler fra API-nøglen. Denne handling kan ikke fortrydes.",
+      "successToast": "Salgskanalen blev fjernet fra API-nøglen.",
+      "successToastBatch_one": "Salgskanalen {{count}} blev fjernet fra API-nøglen.",
+      "successToastBatch_other": "{{count}} salgskanaler blev fjernet fra API-nøglen."
+    },
+    "actions": {
+      "revoke": "Tilbagekald API-nøgle",
+      "copy": "Kopiér API-nøgle",
+      "copySuccessToast": "API-nøgle blev kopieret til udklipsholder."
+    },
+    "table": {
+      "lastUsedAtHeader": "Sidst brugt kl",
+      "createdAtHeader": "Tilbagekaldt Kl"
+    },
+    "fields": {
+      "lastUsedAtLabel": "Sidst brugt kl",
+      "revokedByLabel": "Tilbagekaldt af",
+      "revokedAtLabel": "Tilbagekaldt kl",
+      "createdByLabel": "Skabt af"
+    }
+  },
+  "returnReasons": {
+    "domain": "Returårsager",
+    "subtitle": "Administrer årsager til returnerede varer.",
+    "calloutHint": "Administrer årsagerne til at kategorisere returneringer.",
+    "editReason": "Rediger returårsag",
+    "create": {
+      "header": "Tilføj returårsag",
+      "subtitle": "Angiv de mest almindelige årsager til returnering.",
+      "hint": "Opret en ny returårsag til at kategorisere returneringer.",
+      "successToast": "Returårsagen til, at {{label}} blev oprettet."
+    },
+    "edit": {
+      "header": "Rediger returårsag",
+      "subtitle": "Rediger værdien af ​​returneringsårsagen.",
+      "successToast": "Returårsagen til, at {{label}} blev opdateret."
+    },
+    "delete": {
+      "confirmation": "Du er ved at slette returneringsårsagen \"{{label}}\". Denne handling kan ikke fortrydes.",
+      "successToast": "Returårsagen \"{{label}}\" blev slettet."
+    },
+    "fields": {
+      "value": {
+        "label": "Værdi",
+        "placeholder": "forkert_størrelse",
+        "tooltip": "Værdien skal være et unikt id af returneringsårsagen."
+      },
+      "label": {
+        "label": "Etiket",
+        "placeholder": "Forkert størrelse"
+      },
+      "description": {
+        "label": "Beskrivelse",
+        "placeholder": "Kunden modtog den forkerte størrelse"
+      }
+    }
+  },
+  "refundReasons": {
+    "domain": "Grunde til tilbagebetaling",
+    "subtitle": "Administrer årsager til at udstede refusioner.",
+    "calloutHint": "Administrer årsagerne til at kategorisere refusioner.",
+    "editReason": "Rediger refusionsårsag",
+    "create": {
+      "header": "Tilføj refusionsårsag",
+      "subtitle": "Angiv de mest almindelige årsager til refusion.",
+      "hint": "Opret en ny refusionsårsag til at kategorisere refusioner.",
+      "successToast": "Refusionsårsagen til, at {{label}} blev oprettet."
+    },
+    "edit": {
+      "header": "Rediger refusionsårsag",
+      "subtitle": "Rediger værdien af ​​refusionsårsagen.",
+      "successToast": "Refusionsårsagen til, at {{label}} blev opdateret."
+    },
+    "delete": {
+      "confirmation": "Du er ved at slette tilbagebetalingsårsagen \"{{label}}\". Denne handling kan ikke fortrydes.",
+      "successToast": "Refusionsårsagen blev slettet."
+    },
+    "fields": {
+      "label": {
+        "label": "Etiket",
+        "placeholder": "Gest af velvilje"
+      },
+      "code": {
+        "label": "Kode",
+        "placeholder": "gestus_af_godvilje"
+      },
+      "description": {
+        "label": "Beskrivelse",
+        "placeholder": "Kunden havde en dårlig indkøbsoplevelse"
+      }
+    }
+  },
+  "login": {
+    "forgotPassword": "Glemt adgangskode? - <0>Nulstil</0>",
+    "title": "Velkommen til Medusa",
+    "hint": "Log ind for at få adgang til kontoområdet"
+  },
+  "invite": {
+    "title": "Velkommen til Medusa",
+    "hint": "Opret din konto nedenfor",
+    "backToLogin": "Tilbage til login",
+    "createAccount": "Opret konto",
+    "alreadyHaveAccount": "Har du allerede en konto? - <0> Log ind</0>",
+    "emailTooltip": "Din e-mail kan ikke ændres. Hvis du gerne vil bruge en anden e-mail, skal der sendes en ny invitation.",
+    "invalidInvite": "Invitationen er ugyldig eller er udløbet.",
+    "successTitle": "Din konto er blevet registreret",
+    "successHint": "Kom i gang med Medusa Admin med det samme.",
+    "successAction": "Start Medusa Admin",
+    "invalidTokenTitle": "Dit invitationstoken er ugyldigt",
+    "invalidTokenHint": "Prøv at anmode om et nyt invitationslink.",
+    "passwordMismatch": "Adgangskoder stemmer ikke overens",
+    "toast": {
+      "accepted": "Invitationen blev accepteret"
+    }
+  },
+  "resetPassword": {
+    "title": "Nulstil adgangskode",
+    "hint": "Indtast din e-mail nedenfor, og vi sender dig instruktioner om, hvordan du nulstiller din adgangskode.",
+    "email": "E-mail",
+    "sendResetInstructions": "Send instruktioner til nulstilling",
+    "backToLogin": "<0>Tilbage til login</0>",
+    "newPasswordHint": "Vælg en ny adgangskode nedenfor.",
+    "invalidTokenTitle": "Dit nulstillingstoken er ugyldigt",
+    "invalidTokenHint": "Prøv at anmode om et nyt nulstillingslink.",
+    "expiredTokenTitle": "Dit nulstillingstoken er udløbet",
+    "goToResetPassword": "Gå til Nulstil adgangskode",
+    "resetPassword": "Nulstil adgangskode",
+    "newPassword": "Ny adgangskode",
+    "repeatNewPassword": "Gentag ny adgangskode",
+    "tokenExpiresIn": "Token udløber om <0>{{time}}</0> minutter",
+    "successfulRequestTitle": "Sendte dig en e-mail",
+    "successfulRequest": "Vi har sendt dig en e-mail, som du kan bruge til at nulstille din adgangskode. Tjek din spam-mappe, hvis du ikke har modtaget den efter et par minutter.",
+    "successfulResetTitle": "Nulstilling af adgangskode lykkedes",
+    "successfulReset": "Log venligst ind på login-siden.",
+    "passwordMismatch": "Adgangskoder stemmer ikke overens",
+    "invalidLinkTitle": "Dit nulstillingslink er ugyldigt",
+    "invalidLinkHint": "Prøv at nulstille din adgangskode igen."
+  },
+  "workflowExecutions": {
+    "domain": "Arbejdsgange",
+    "subtitle": "Se og hold styr på udførelse af arbejdsgange i din Medusa-applikation.",
+    "transactionIdLabel": "Transaktions-id",
+    "workflowIdLabel": "Workflow ID",
+    "progressLabel": "Fremskridt",
+    "stepsCompletedLabel_one": "{{completed}} af {{count}} trin",
+    "stepsCompletedLabel_other": "{{completed}} af {{count}} trin",
+    "list": {
+      "noRecordsMessage": "Ingen arbejdsgange er blevet udført endnu."
+    },
+    "history": {
+      "sectionTitle": "Historie",
+      "runningState": "Kører...",
+      "awaitingState": "Afventer",
+      "failedState": "Mislykkedes",
+      "skippedState": "Sprang over",
+      "skippedFailureState": "Springet over (fejl)",
+      "definitionLabel": "Definition",
+      "outputLabel": "Output",
+      "compensateInputLabel": "Kompenser input",
+      "revertedLabel": "Tilbageført",
+      "errorLabel": "Fejl"
+    },
+    "state": {
+      "done": "Færdig",
+      "failed": "Mislykkedes",
+      "reverted": "Tilbageført",
+      "invoking": "Påberåber sig",
+      "compensating": "Kompenserende",
+      "notStarted": "Ikke startet"
+    },
+    "transaction": {
+      "state": {
+        "waitingToCompensate": "Venter på at kompensere"
+      }
+    },
+    "step": {
+      "state": {
+        "skipped": "Sprang over",
+        "skippedFailure": "Springet over (fejl)",
+        "dormant": "Sovende",
+        "timeout": "Timeout"
+      }
+    }
+  },
+  "shippingOptionTypes": {
+    "domain": "Forsendelsesmuligheder typer",
+    "subtitle": "Organiser dine forsendelsesmuligheder i typer.",
+    "create": {
+      "header": "Opret forsendelsesindstillingstype",
+      "hint": "Opret en ny forsendelsestype for at kategorisere dine forsendelsesmuligheder.",
+      "successToast": "Forsendelsesmulighedstype {{label}} blev oprettet."
+    },
+    "edit": {
+      "header": "Rediger forsendelsesindstillingstype",
+      "successToast": "Forsendelsesmulighedstype {{label}} blev opdateret."
+    },
+    "delete": {
+      "confirmation": "Du er ved at slette forsendelsesmulighedstypen \"{{label}}\". Denne handling kan ikke fortrydes.",
+      "successToast": "Forsendelsesmulighedstypen \"{{label}}\" blev slettet."
+    },
+    "fields": {
+      "label": "Etiket",
+      "code": "Kode",
+      "description": "Beskrivelse"
+    }
+  },
+  "productTypes": {
+    "domain": "Produkttyper",
+    "subtitle": "Organiser dine produkter i typer.",
+    "create": {
+      "header": "Opret produkttype",
+      "hint": "Opret en ny produkttype for at kategorisere dine produkter.",
+      "successToast": "Produkttype {{value}} blev oprettet."
+    },
+    "edit": {
+      "header": "Rediger produkttype",
+      "successToast": "Produkttype {{value}} blev opdateret."
+    },
+    "delete": {
+      "confirmation": "Du er ved at slette produkttypen \"{{value}}\". Denne handling kan ikke fortrydes.",
+      "successToast": "Produkttypen \"{{value}}\" blev slettet."
+    },
+    "fields": {
+      "value": "Værdi"
+    }
+  },
+  "productTags": {
+    "domain": "Produkt Tags",
+    "create": {
+      "header": "Opret produkttag",
+      "subtitle": "Opret et nyt produkttag for at kategorisere dine produkter.",
+      "successToast": "Produkttag {{value}} blev oprettet."
+    },
+    "edit": {
+      "header": "Rediger produkttag",
+      "subtitle": "Rediger værdien af ​​produkttagget.",
+      "successToast": "Produkttag {{value}} blev opdateret."
+    },
+    "delete": {
+      "confirmation": "Du er ved at slette produktmærket {{value}}. Denne handling kan ikke fortrydes.",
+      "successToast": "Produkttag {{value}} blev slettet."
+    },
+    "fields": {
+      "value": "Værdi"
+    }
+  },
+  "notifications": {
+    "domain": "Meddelelser",
+    "emptyState": {
+      "title": "Ingen meddelelser",
+      "description": "Du har ingen notifikationer i øjeblikket, men når du først gør det, vil de bo her."
+    },
+    "accessibility": {
+      "description": "Notifikationer om Medusa-aktiviteter vil blive vist her."
+    }
+  },
+  "errors": {
+    "serverError": "Serverfejl - Prøv igen senere.",
+    "invalidCredentials": "Forkert e-mail eller adgangskode"
+  },
+  "statuses": {
+    "scheduled": "Planlagt",
+    "expired": "Udløbet",
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "draft": "Udkast",
+    "enabled": "Aktiveret",
+    "disabled": "Deaktiveret"
+  },
+  "labels": {
+    "productVariant": "Produktvariant",
+    "prices": "Priser",
+    "available": "Tilgængelig",
+    "inStock": "På lager",
+    "added": "Tilføjet",
+    "removed": "Fjernet",
+    "from": "Fra",
+    "to": "Til",
+    "beaware": "Vær opmærksom",
+    "loading": "Indlæser",
+    "selectValue": "Vælg Værdi",
+    "selectValues": "Vælg Værdier"
+  },
+  "fields": {
+    "amount": "Beløb",
+    "reference": "Reference",
+    "reference_id": "Reference ID",
+    "refundAmount": "Tilbagebetalingsbeløb",
+    "name": "Navn",
+    "default": "Standard",
+    "lastName": "Efternavn",
+    "firstName": "Fornavn",
+    "title": "Titel",
+    "customTitle": "Brugerdefineret titel",
+    "manageInventory": "Administrer inventar",
+    "inventoryKit": "Har inventarsæt",
+    "inventoryItems": "Inventarartikler",
+    "inventoryItem": "Inventarvare",
+    "requiredQuantity": "Påkrævet mængde",
+    "description": "Beskrivelse",
+    "email": "E-mail",
+    "password": "Adgangskode",
+    "repeatPassword": "Gentag adgangskode",
+    "confirmPassword": "Bekræft adgangskode",
+    "newPassword": "Ny adgangskode",
+    "repeatNewPassword": "Gentag ny adgangskode",
+    "categories": "Kategorier",
+    "shippingMethod": "Forsendelsesmetode",
+    "configurations": "Konfigurationer",
+    "enabledInStore": "Aktiveret i butikken",
+    "isReturn": "Er retur",
+    "conditions": "Forhold",
+    "category": "Kategori",
+    "collection": "Samling",
+    "discountable": "Til rabat",
+    "promotionCode": "Kampagnekode",
+    "handle": "Håndtag",
+    "subtitle": "Undertekst",
+    "by": "Af",
+    "item": "Vare",
+    "qty": "Antal",
+    "limit": "Grænse",
+    "tags": "Tags",
+    "type": "Type",
+    "reason": "Årsag",
+    "none": "ingen",
+    "all": "alle",
+    "search": "Søg",
+    "percentage": "Procent",
+    "sales_channels": "Salgskanaler",
+    "customer_groups": "Kundegrupper",
+    "product_tags": "Produkttags",
+    "product_types": "Produkttyper",
+    "product_collections": "Produktsamlinger",
+    "status": "Status",
+    "code": "Kode",
+    "value": "Værdi",
+    "disabled": "Deaktiveret",
+    "dynamic": "Dynamisk",
+    "normal": "Normal",
+    "years": "år",
+    "months": "måneder",
+    "days": "dage",
+    "hours": "Timer",
+    "minutes": "Minutter",
+    "totalRedemptions": "Samlede indløsninger",
+    "countries": "lande",
+    "serviceZone": "Servicezone",
+    "paymentProviders": "Betalingsudbydere",
+    "refundReason": "Årsag til tilbagebetaling",
+    "fulfillmentProviders": "Udbydere af opfyldelse",
+    "fulfillmentProvider": "Opfyldelsesudbyder",
+    "providers": "Udbydere",
+    "availability": "Tilgængelighed",
+    "inventory": "Inventar",
+    "optional": "Valgfrit",
+    "note": "Bemærk",
+    "automaticTaxes": "Automatiske skatter",
+    "taxInclusivePricing": "Priser inklusive moms",
+    "currency": "Valuta",
+    "address": "Adresse",
+    "address2": "Lejlighed, suite mv.",
+    "city": "By",
+    "postalCode": "Postnummer",
+    "country": "Land",
+    "state": "Stat",
+    "province": "Provins",
+    "company": "Firma",
+    "phone": "Telefon",
+    "metadata": "Metadata",
+    "selectCountry": "Vælg land",
+    "products": "Produkter",
+    "variants": "Varianter",
+    "orders": "Ordrer",
+    "account": "Konto",
+    "total": "Ordre i alt",
+    "paidTotal": "Betalt i alt",
+    "creditTotal": "Kreditlinjer i alt",
+    "totalExclTax": "I alt ekskl. skat",
+    "subtotal": "Subtotal",
+    "shipping": "Forsendelse",
+    "outboundShipping": "Udgående forsendelse",
+    "returnShipping": "Returforsendelse",
+    "tax": "Skat",
+    "created": "Oprettet",
+    "key": "Nøgle",
+    "customer": "Kunde",
+    "date": "Dato",
+    "order": "Ordre",
+    "fulfillment": "Opfyldelse",
+    "provider": "Udbyder",
+    "payment": "Betaling",
+    "items": "Varer",
+    "salesChannel": "Salgskanal",
+    "region": "Region",
+    "discount": "Rabat",
+    "role": "Rolle",
+    "sent": "Sendt",
+    "salesChannels": "Salgskanaler",
+    "product": "Produkt",
+    "createdAt": "Oprettet",
+    "updatedAt": "Opdateret",
+    "revokedAt": "Tilbagekaldt kl",
+    "true": "Sandt",
+    "false": "Falsk",
+    "giftCard": "Gavekort",
+    "tag": "Tag",
+    "dateIssued": "Dato udstedt",
+    "issuedDate": "Udstedelsesdato",
+    "expiryDate": "Udløbsdato",
+    "price": "Pris",
+    "priceTemplate": "Pris {{regionOrCurrency}}",
+    "height": "Højde",
+    "width": "Bredde",
+    "length": "Længde",
+    "weight": "Vægt",
+    "midCode": "MID kode",
+    "hsCode": "HS kode",
+    "ean": "EAN",
+    "upc": "UPC",
+    "inventoryQuantity": "Lagermængde",
+    "barcode": "Stregkode",
+    "countryOfOrigin": "Oprindelsesland",
+    "material": "Materiale",
+    "thumbnail": "Miniaturebillede",
+    "sku": "SKU",
+    "managedInventory": "Administreret inventar",
+    "allowBackorder": "Tillad restordre",
+    "inStock": "På lager",
+    "location": "Beliggenhed",
+    "quantity": "Mængde",
+    "variant": "Variant",
+    "id": "ID",
+    "parent": "Forælder",
+    "minSubtotal": "Min. Subtotal",
+    "maxSubtotal": "Maks. Subtotal",
+    "shippingProfile": "Forsendelsesprofil",
+    "summary": "Resumé",
+    "details": "Detaljer",
+    "label": "Etiket",
+    "rate": "Bedøm",
+    "requiresShipping": "Kræver forsendelse",
+    "unitPrice": "Enhedspris",
+    "startDate": "Startdato",
+    "endDate": "Slutdato",
+    "draft": "Udkast",
+    "values": "Værdier"
+  },
+  "dateTime": {
+    "years_one": "år",
+    "years_other": "år",
+    "months_one": "Måned",
+    "months_other": "måneder",
+    "weeks_one": "uge",
+    "weeks_other": "Uger",
+    "days_one": "dag",
+    "days_other": "dage",
+    "hours_one": "time",
+    "hours_other": "Timer",
+    "minutes_one": "minut",
+    "minutes_other": "Referater",
+    "seconds_one": "For det andet",
+    "seconds_other": "Sekunder"
+  },
+  "views": {
+    "save": "Gem",
+    "saveAsNew": "Gem som ny visning",
+    "updateDefaultForEveryone": "Opdater standard for alle",
+    "updateViewName": "Opdater visning",
+    "prompts": {
+      "updateDefault": {
+        "title": "Opdater standardvisning",
+        "description": "Dette vil opdatere standardvisningen for alle brugere. Er du sikker?",
+        "confirmText": "Opdatering for alle",
+        "cancelText": "Annuller"
+      },
+      "updateView": {
+        "title": "Opdater visning",
+        "description": "Er du sikker på, at du vil opdatere \"{{name}}\"?",
+        "confirmText": "Opdatering",
+        "cancelText": "Annuller"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "authenticationFailed": "Godkendelse mislykkedes",
+      "cloud": "Log ind med Medusa Cloud"
+    }
+  }
+}

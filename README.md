@@ -70,7 +70,21 @@ The `medusa` service talks to Postgres and Redis over Railway's private network.
 | `MEDUSA_WORKER_MODE` | `shared` (default), `server`, or `worker` | Optional |
 | `DISABLE_MEDUSA_ADMIN` | Set `true` to disable the admin UI | Optional |
 | `STOREFRONT_URL` | Public CMS/storefront URL used for checkout return/cancel defaults. | Optional |
+| `S3_BUCKET` / `S3_FILE_URL` / `S3_REGION` / `S3_ACCESS_KEY_ID` / `S3_SECRET_ACCESS_KEY` | S3-compatible file storage for uploads and Admin product export CSVs. Configure all of them together in production. | Production |
+| `LOCAL_FILE_BACKEND_URL` | Local file-provider fallback used only when no `S3_*` values are configured. | Local dev |
 | `NEXI_CHECKOUT_SECRET_KEY` | Enables the Nexi Checkout / Nets Easy payment provider when set. | Optional |
+
+### File Storage and Product Export
+
+Medusa Admin product export writes a CSV through the Medusa file module and then
+creates an Admin notification with the download URL. In production, configure the
+Railway S3-compatible bucket variables from `.env.example`; otherwise export
+workflows cannot persist the generated CSV.
+
+This fork uses S3 only when the required `S3_*` variables are complete. With no
+S3 configuration, it falls back to Medusa's local file provider for development.
+If only some S3 variables are present, startup fails with a clear missing-env
+message so exports and product uploads do not break later in the Admin UI.
 
 ### Nexi Checkout / Nets Easy
 
