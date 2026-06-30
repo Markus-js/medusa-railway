@@ -69,6 +69,22 @@ The `medusa` service talks to Postgres and Redis over Railway's private network.
 | `BACKEND_URL` | Only set if the admin UI is served from a different domain than the API. Empty by default — admin uses same-origin relative URLs. | Optional |
 | `MEDUSA_WORKER_MODE` | `shared` (default), `server`, or `worker` | Optional |
 | `DISABLE_MEDUSA_ADMIN` | Set `true` to disable the admin UI | Optional |
+| `STOREFRONT_URL` | Public CMS/storefront URL used for checkout return/cancel defaults. | Optional |
+| `NEXI_CHECKOUT_SECRET_KEY` | Enables the Nexi Checkout / Nets Easy payment provider when set. | Optional |
+
+### Nexi Checkout / Nets Easy
+
+This fork includes a custom Medusa payment provider for Nexi Checkout hosted
+payments. The provider is registered only when `NEXI_CHECKOUT_SECRET_KEY` is set.
+
+- Provider id in Medusa: `pp_nexi-checkout_nexi`
+- Default webhook URL: `${BACKEND_URL}/hooks/payment/pp_nexi-checkout_nexi`
+- Default mode: `NEXI_CHECKOUT_ENV=test`
+- Default capture mode: authorization/reservation first, admin capture later
+
+Configure the provider in Railway with the `NEXI_CHECKOUT_*` variables from
+`.env.example`, then enable `pp_nexi-checkout_nexi` on the Danish region in
+Medusa Admin.
 
 ### Deployment Dependencies
 
