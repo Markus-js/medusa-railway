@@ -8,13 +8,14 @@ RUN apk add --no-cache python3 make g++ libc6-compat \
 COPY package.json ./
 COPY tsconfig.json ./
 COPY medusa-config.ts ./
+COPY scripts ./scripts
 COPY src ./src
 
 RUN npm install --legacy-peer-deps --no-audit --no-fund
 
 RUN npx medusa build
 
-RUN cd /app/.medusa/server && npm install --legacy-peer-deps --omit=dev --no-audit --no-fund && npm cache clean --force
+RUN cd /app/.medusa/server && npm install --legacy-peer-deps --omit=dev --ignore-scripts --no-audit --no-fund && npm cache clean --force
 
 
 FROM node:22-alpine AS runtime
