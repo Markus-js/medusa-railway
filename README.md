@@ -72,7 +72,7 @@ The `medusa` service talks to Postgres and Redis over Railway's private network.
 | `STOREFRONT_URL` | Public CMS/storefront URL used for checkout return/cancel defaults. | Optional |
 | `S3_BUCKET` / `S3_FILE_URL` / `S3_REGION` / `S3_ACCESS_KEY_ID` / `S3_SECRET_ACCESS_KEY` | S3-compatible file storage for uploads and Admin product export CSVs. Configure all of them together in production. | Production |
 | `LOCAL_FILE_BACKEND_URL` | Local file-provider fallback used only when no `S3_*` values are configured. | Local dev |
-| `NEXI_CHECKOUT_SECRET_KEY` | Enables the Nexi Checkout / Nets Easy payment provider when set. | Optional |
+| `NEXI_CHECKOUT_SECRET_KEY` | Nexi Checkout / Nets Easy API secret. Provider is visible without it, but checkout will fail until it is set. | Before live checkout |
 
 ### File Storage and Product Export
 
@@ -89,16 +89,19 @@ message so exports and product uploads do not break later in the Admin UI.
 ### Nexi Checkout / Nets Easy
 
 This fork includes a custom Medusa payment provider for Nexi Checkout hosted
-payments. The provider is registered only when `NEXI_CHECKOUT_SECRET_KEY` is set.
+payments. The provider is always registered so it appears in Medusa Admin, but
+it cannot process checkout until `NEXI_CHECKOUT_SECRET_KEY` is set on the Medusa
+service and the service has been redeployed.
 
 - Provider id in Medusa: `pp_nexi-checkout_nexi`
 - Default webhook URL: `${BACKEND_URL}/hooks/payment/pp_nexi-checkout_nexi`
 - Default mode: `NEXI_CHECKOUT_ENV=test`
 - Default capture mode: authorization/reservation first, admin capture later
 
-Configure the provider in Railway with the `NEXI_CHECKOUT_*` variables from
-`.env.example`, then enable `pp_nexi-checkout_nexi` on the Danish region in
-Medusa Admin.
+Enable `pp_nexi-checkout_nexi` on the Danish region in Medusa Admin when the
+project should use Nexi. Configure the provider in Railway with the
+`NEXI_CHECKOUT_*` variables from `.env.example` before testing or launching
+checkout.
 
 ### Deployment Dependencies
 

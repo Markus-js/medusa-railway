@@ -91,49 +91,53 @@ const fileProvider =
         },
       }
 
-const nexiProvider = process.env.NEXI_CHECKOUT_SECRET_KEY
-  ? [
-      {
-        resolve: "./src/modules/nexi-checkout",
-        id: "nexi",
-        options: {
-          secretKey: process.env.NEXI_CHECKOUT_SECRET_KEY,
-          environment: process.env.NEXI_CHECKOUT_ENV || "test",
-          baseUrl: process.env.NEXI_CHECKOUT_BASE_URL,
-          returnUrl:
-            process.env.NEXI_CHECKOUT_RETURN_URL ||
-            `${storefrontUrl}/shop/checkout/return`,
-          cancelUrl:
-            process.env.NEXI_CHECKOUT_CANCEL_URL ||
-            `${storefrontUrl}/shop/cart`,
-          termsUrl:
-            process.env.NEXI_CHECKOUT_TERMS_URL ||
-            `${storefrontUrl}/vilkaar`,
-          merchantTermsUrl: process.env.NEXI_CHECKOUT_MERCHANT_TERMS_URL,
-          checkoutUrl: process.env.NEXI_CHECKOUT_URL,
-          webhookUrl:
-            process.env.NEXI_CHECKOUT_WEBHOOK_URL ||
-            (backendUrl
-              ? `${backendUrl.replace(
-                  /\/$/,
-                  ""
-                )}/hooks/payment/pp_nexi-checkout_nexi`
-              : undefined),
-          webhookAuthorization:
-            process.env.NEXI_CHECKOUT_WEBHOOK_AUTHORIZATION,
-          merchantNumber: process.env.NEXI_CHECKOUT_MERCHANT_NUMBER,
-          countryCode: process.env.NEXI_CHECKOUT_COUNTRY_CODE || "DNK",
-          autoCapture: parseBoolean(process.env.NEXI_CHECKOUT_AUTO_CAPTURE),
-          merchantHandlesConsumerData: parseBoolean(
-            process.env.NEXI_CHECKOUT_MERCHANT_HANDLES_CONSUMER_DATA,
-            true
-          ),
-          paymentMethods: parseCsv(process.env.NEXI_CHECKOUT_PAYMENT_METHODS),
-          webhookEvents: parseCsv(process.env.NEXI_CHECKOUT_WEBHOOK_EVENTS),
-        },
-      },
-    ]
-  : []
+if (!process.env.NEXI_CHECKOUT_SECRET_KEY) {
+  console.warn(
+    "Nexi Checkout provider is registered but missing NEXI_CHECKOUT_SECRET_KEY. It can be selected in Medusa Admin, but checkout will fail until the key is configured."
+  )
+}
+
+const nexiProvider = [
+  {
+    resolve: "./src/modules/nexi-checkout",
+    id: "nexi",
+    options: {
+      secretKey: process.env.NEXI_CHECKOUT_SECRET_KEY,
+      environment: process.env.NEXI_CHECKOUT_ENV || "test",
+      baseUrl: process.env.NEXI_CHECKOUT_BASE_URL,
+      returnUrl:
+        process.env.NEXI_CHECKOUT_RETURN_URL ||
+        `${storefrontUrl}/shop/checkout/return`,
+      cancelUrl:
+        process.env.NEXI_CHECKOUT_CANCEL_URL ||
+        `${storefrontUrl}/shop/cart`,
+      termsUrl:
+        process.env.NEXI_CHECKOUT_TERMS_URL ||
+        `${storefrontUrl}/vilkaar`,
+      merchantTermsUrl: process.env.NEXI_CHECKOUT_MERCHANT_TERMS_URL,
+      checkoutUrl: process.env.NEXI_CHECKOUT_URL,
+      webhookUrl:
+        process.env.NEXI_CHECKOUT_WEBHOOK_URL ||
+        (backendUrl
+          ? `${backendUrl.replace(
+              /\/$/,
+              ""
+            )}/hooks/payment/pp_nexi-checkout_nexi`
+          : undefined),
+      webhookAuthorization:
+        process.env.NEXI_CHECKOUT_WEBHOOK_AUTHORIZATION,
+      merchantNumber: process.env.NEXI_CHECKOUT_MERCHANT_NUMBER,
+      countryCode: process.env.NEXI_CHECKOUT_COUNTRY_CODE || "DNK",
+      autoCapture: parseBoolean(process.env.NEXI_CHECKOUT_AUTO_CAPTURE),
+      merchantHandlesConsumerData: parseBoolean(
+        process.env.NEXI_CHECKOUT_MERCHANT_HANDLES_CONSUMER_DATA,
+        true
+      ),
+      paymentMethods: parseCsv(process.env.NEXI_CHECKOUT_PAYMENT_METHODS),
+      webhookEvents: parseCsv(process.env.NEXI_CHECKOUT_WEBHOOK_EVENTS),
+    },
+  },
+]
 
 module.exports = defineConfig({
   projectConfig: {

@@ -17,7 +17,7 @@ type RequestOptions = {
 
 export class NexiCheckoutClient {
   private readonly baseUrl: string
-  private readonly secretKey: string
+  private readonly secretKey?: string
   private readonly merchantNumber?: string
 
   constructor(private readonly options: NexiCheckoutProviderOptions) {
@@ -134,6 +134,12 @@ export class NexiCheckoutClient {
     path: string,
     options: RequestOptions = {}
   ): Promise<T> {
+    if (!this.secretKey) {
+      throw new Error(
+        "Nexi Checkout is selected but NEXI_CHECKOUT_SECRET_KEY is missing. Set it on the Medusa Railway service and redeploy before using this payment provider."
+      )
+    }
+
     const headers: Record<string, string> = {
       Accept: "application/json",
       Authorization: this.secretKey,

@@ -59,7 +59,7 @@ export default class NexiCheckoutProviderService extends AbstractPaymentProvider
   protected readonly client_: NexiCheckoutClient
 
   static validateOptions(options: NexiCheckoutProviderOptions): void {
-    const requiredOptions = ["secretKey", "returnUrl", "cancelUrl", "termsUrl"]
+    const requiredOptions = ["returnUrl", "cancelUrl", "termsUrl"]
     const missing = requiredOptions.filter((key) => !options?.[key])
 
     if (missing.length) {

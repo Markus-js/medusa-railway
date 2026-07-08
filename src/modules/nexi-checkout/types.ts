@@ -3,7 +3,7 @@ import type { BigNumberInput } from "@medusajs/framework/types"
 export type NexiCheckoutEnvironment = "test" | "live"
 
 export type NexiCheckoutProviderOptions = {
-  secretKey: string
+  secretKey?: string
   environment?: NexiCheckoutEnvironment
   baseUrl?: string
   returnUrl: string
